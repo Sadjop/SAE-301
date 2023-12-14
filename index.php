@@ -1,7 +1,7 @@
 <?php
-include_once("config/config.php");
+include("config/config.php");
 
-$bdd = new PDO('mysql:host=' . $hote . ';port=' . $port . ';dbname=' . $nom_bd, $identifiant, $mot_de_passe, $options);
+$bdd = new PDO('mysql:host=' . $host . ';port=' . $port . ';dbname=' . $dbname, $username, $password);
 
 // Requête pour sélectionner tous les animaux et leurs photos associées, 
 //triés par ID d'animaux de la plus récente à la plus ancienne
@@ -29,16 +29,20 @@ $resultats->closeCursor();
     <title>Meal Pattes</title>
 </head>
 <body>
-    
+
+
+<!-- Affichage des animaux du plus récent au plus ancien : -->
 <?php
 
 foreach ($tabpet as $pet) {
     echo '<div class="pet">';
-    echo '<h2>' . $pet['name'] . '</h2>';
+    echo '<h2>' . $pet['pet_name'] . '</h2>';
     echo '<img src="' . $pet['path'] . '">';
-    echo '<p>' . $pet['description'] . '</p>';
+    echo '<p>' . $pet['bio'] . '</p>';
     echo '</div>';
 }
+
+
 
 ?>
 
