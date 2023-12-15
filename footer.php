@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -26,9 +25,9 @@
                 </ul>
             </div>
             <div class="reseaux">
-                <a href="http://"><img src="img/facebook.png" alt=""></a>
-                <a href="http://"><img src="img/instagram.png" alt=""></a>
-                <a href="http://"><img src="img/telephone.png" alt=""></a>
+                <a href="http://"><img src="img/footer/facebook.png" alt=""></a>
+                <a href="http://"><img src="img/footer/instagram.png" alt=""></a>
+                <a href="http://"><img src="img/footer/telephone.png" alt=""></a>
             </div>
         </div>
     </footer>

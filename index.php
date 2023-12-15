@@ -69,8 +69,8 @@ $resultats->closeCursor();
       echo '</div>';
     }
     ?>
-
   </main>
+  <?php include("footer.php") ?>
 
 </body>
 
