@@ -40,7 +40,7 @@ $resultats->closeCursor();
 
   <!-- Intro Heading -->
   <main class="main-content">
-    
+
     <img src="img/accueil/accueil.png" alt="">
     <div class="repas">
       <div class="repas-content">
@@ -66,7 +66,6 @@ $resultats->closeCursor();
       echo '<div class="pet_card">';
       echo '<h2>' . $pet['pet_name'] . '</h2>';
       echo '<a href="animal.php?id=' . $pet['id_pet'] . '"><img src="' . $pet['path'] . '"></a>';
-      // echo '<p>' . $pet['bio'] . '</p>';
       echo '</div>';
     }
     ?>

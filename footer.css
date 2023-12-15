@@ -1,0 +1,114 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+
+.footer {
+    background-image: url(img/bg-footer.png);
+    height: 75vh;
+    object-fit: cover;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: 0;
+}
+
+.liste-footer {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: 400;
+    margin-top: 25vh;
+
+}
+
+.liste-footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 23%;
+    padding-left: 6%;
+}
+
+.liste-footer li {
+    display: flex;
+    padding: 10%;
+    justify-content: space-around;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 4%;
+}
+
+.reseaux a {
+    display: flex;
+    padding: 2%;
+}
+
+
+/* tablet*/
+@media screen and (max-width: 1024px) {
+    * {
+        font-size: 12px;
+        height: fit-content;
+        transition: all 1s;
+    }
+
+    .footer {
+        height: auto;
+    }
+
+    .reseaux a {
+        width: 100%;
+        max-width: 100px;
+        height: 75%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .reseaux {
+        height: 6%;
+        object-fit: cover;
+     }
+
+     .reseaux img {
+        height: 40px;
+    }
+}
+
+
+/* telephone*/
+@media screen and (max-width: 600px) {
+    * {
+        font-size: 7px;
+        height: fit-content;
+        transition: all 1s;
+    }
+
+    .footer {
+        height: fit-content;
+    }
+
+    .reseaux img {
+        height: 20px;
+    }
+
+    .reseaux a {
+        width: 100%;
+        max-width: 50px;
+        height: 50%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    .reseaux {
+       height:3%;
+       object-fit: cover;
+    }
+
+}

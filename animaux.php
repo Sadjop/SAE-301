@@ -44,7 +44,7 @@ $resultats->closeCursor();
             <span>Nos compagnons</span>
         </div>
 
-        <h1>Nos petits compagnons !</h1>
+        <h1 class="h1_animaux">Nos petits compagnons !</h1>
 
         <!-- Affichage des animaux du plus récent au plus ancien : -->
         <?php
@@ -52,7 +52,6 @@ $resultats->closeCursor();
         foreach ($tabpet as $pet) {
             echo '<div class="pet_card">';
             echo '<h2>' . $pet['pet_name'] . '</h2>';
-            // echo '<p>' . $pet['bio'] . '</p>';
             echo '<a href="animal.php?id=' . $pet['id_pet'] . '"><img src="' . $pet['path'] . '" alt="photo de ' . $pet['pet_name'] . '"></a>';
             echo '<a href="animal.php?id=' . $pet['id_pet'] . '">En savoir plus</a>';
             echo '</div>';
