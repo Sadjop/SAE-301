@@ -27,24 +27,45 @@ $resultats->closeCursor();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meal Pattes</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="body_accueil">
+
+<!-- Inclusion de la navbar -->
+<?php include("element/navbar.php") ?> 
 
 
+<!-- Intro Heading -->
+<main class="main-content">
+        <img src="img/accueil/accueil.png" alt="">
+        <div class="repas">
+            <div class="repas-content">
+                <img src="img/accueil/repas.png" alt="">
+            </div>
+            <div>
+                <h4>Bienvenue au Meal Pattes !</h4>
+                <p>
+                    Ce site est dédié à l'événement caritatif organisé par la SPA Haute-Loire, qui se déroulera du 29 janvier 2024 au 30 janvier 2024 dans la salle Jeanne d'Arc au Puy-en-Velay. Découvrez notre restaurant éphémère avec sa carte alléchante. Cet événement a pour mission de récolter des fonds essentiels pour soutenir notre SPA et faciliter l'adoption des animaux qui méritent une seconde chance. En unissant les plaisirs d'une carte de qualité et la noble cause de venir en aide aux animaux sans foyer, nous créons une opportunité pour vous de contribuer à une cause qui nous tient à cœur.
+                </p>
+
+            </div>
+        </div>
+   
 <!-- Affichage des animaux du plus récent au plus ancien : -->
 <?php
 
+
 foreach ($tabpet as $pet) {
-    echo '<div class="pet">';
+    echo '<div class="pet_card">';
     echo '<h2>' . $pet['pet_name'] . '</h2>';
-    echo '<img src="' . $pet['path'] . '">';
-    echo '<p>' . $pet['bio'] . '</p>';
+    echo '<a href="animal.php?id='. $pet['id_pet'] .'"><img src="' . $pet['path'] . '"></a>';
+    // echo '<p>' . $pet['bio'] . '</p>';
     echo '</div>';
 }
-
-
-
 ?>
+
+</main>
 
 </body>
 </html>
