@@ -70,7 +70,7 @@ $resultats->closeCursor();
     }
     ?>
   </main>
-  <?php include("footer.php") ?>
+  <?php include("element/footer.php") ?>
 
 </body>
 
