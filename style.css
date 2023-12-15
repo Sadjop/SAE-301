@@ -1,0 +1,111 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+/*pour fixer la barre*/
+.side-nav {
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  top: 0;
+}
+
+/*pour cacher la barre*/
+.wrapper {
+  height: 100vh;
+  width: 75px;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  margin-bottom: 70px;
+}
+
+.side-nav{
+    padding-top: 10px;
+}
+
+.nav-bloc {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.nav-bloc:hover {
+  background: #DD7A52;
+}
+.nav-bloc:hover .sub-nav {
+  transform: translateX(75px);
+}
+.nav-bloc img {
+  width: 25px;
+  transition:  0.2s ease-in-out ;
+}
+.nav-bloc:hover  img {
+ width: 30px;
+}
+.sub-nav {
+  padding: 0px;
+  width: 200px;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: white;
+  z-index: -1;
+  color: white;
+}
+
+.main-content {
+  padding-left: 75px;
+}
+
+.repas {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.repas-content {
+  flex-shrink: 0;
+}
+
+.repas img {
+  border-radius: 15%;
+  width: 80%;
+}
+
+
+/*sert à ajouter un titre au survol de l'icone*/
+.nav-image-container {
+  position: relative;
+  display: inline-block; 
+}
+
+.image-title {
+  position: absolute;
+  top: 50%;
+  left: 120%; 
+  background-color:white;
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.nav-image-container:hover .image-title {
+  opacity: 1;
+}
+
+;
