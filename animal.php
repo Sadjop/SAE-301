@@ -57,27 +57,41 @@ $cat = $tabpet['nom_cat'];
 
     <!-- navbar -->
     <?php include("element/navbar.php") ?>
-    
-    <div class="animal_container">
 
-        <div class="animal_wrapper">
-            <section class="animal_image">
-                <img src="<?php echo $tabpet['path'] ?>" alt="">
-            </section>
-        </div>
+    <main class="main-content">
 
-        <div class="animal_wrapper">
-            <h1 class="animal_name">
+        <!-- Fil d'arianne  -->
+        <div class="fil_arianne">
+            <a href="index.php">Accueil</a> &gt;
+            <a href="animaux.php">Nos compagnons</a> &gt;
+            <span>
                 <?php echo $nom ?>
-            </h1>
-            <section>
-                <p>
-                    <?php echo $bio ?>
-                </p>
-            </section>
+            </span>
         </div>
-    </div>
 
+        <div class="animal_container">
+            
+            <!-- Image -->
+            <div class="animal_wrapper">
+                <section class="animal_image">
+                    <img src="<?php echo $tabpet['path'] ?>" alt="">
+                </section>
+            </div>
+
+
+            <!-- Description -->
+            <div class="animal_wrapper">
+                <h1 class="animal_name">
+                    <?php echo $nom ?>
+                </h1>
+                <section>
+                    <p>
+                        <?php echo $bio ?>
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>

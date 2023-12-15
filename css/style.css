@@ -1,3 +1,19 @@
+/* fil d'arianne */
+.fil_arianne {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.fil_arianne a {
+    text-decoration: none;
+    color: #007bff; /* Couleur des liens */
+}
+
+.fil_arianne a:hover {
+    text-decoration: underline; /* Souligner le lien au survol */
+}
+
+
 /* Page Accueil */
 
 .body_accueil {
@@ -5,32 +21,32 @@
 }
 
 .body_accueil main {
-    margin-left: 75px;
+    margin-left: 5vw;
 }
 
 .pet_card {
-  display: inline-block;
-  width: calc(33.33% - 20px);
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  border-top: 100%;
-  text-align: center;
+    display: inline-block;
+    width: calc(20% - 20px);
+    margin: 2vw;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border-top: 100%;
+    text-align: center;
 }
 
 .pet_card h2 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .pet_card img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 10px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
 }
 
 .pet_card p {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* SideBar */
@@ -39,14 +55,14 @@
 .side-nav{
     position: fixed;
     height: 100vh;
-    left: 0;
+    left: 2vw;
     top: 0;
   }
   
   /*pour cacher la barre*/
   .wrapper_nav {
     height: 100vh;
-    width: 75px;
+    width: 5vw;
   }
   
   .logo {
@@ -93,7 +109,7 @@
   }
   
   .main-content {
-    padding-left: 75px;
+    padding-left: 5vw;
   }
   
   .repas {
@@ -135,9 +151,11 @@
   }
   
   ;
+
+
   
 
-/* Page Animal */
+/* Page Animal individuel*/
 
 .animal_container {
   display: flex;

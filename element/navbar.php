@@ -12,10 +12,15 @@
     <!-- Navbar -->
 
     <nav class="side-nav">
+
+
         <div class="wrapper_nav">
-            <div class="logo">
-                <img src="img/sidebar/logo.png" alt="">
-            </div>
+            <a href="index.php" class="nav_link">
+                <div class="logo">
+                    <img src="img/sidebar/logo.png" alt="">
+                </div>
+
+            </a>
 
             <a href="index.php" class="nav-link">
                 <div class="nav-bloc n-1">
@@ -53,7 +58,7 @@
                 </div>
             </a>
 
-            <a href="animaux.html" class="nav-link">
+            <a href="animaux.php" class="nav-link">
                 <div class="nav-bloc n-5">
                     <div class="nav-image-container">
                         <img src="img/sidebar/animaux.png" alt="">
