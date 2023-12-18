@@ -34,14 +34,7 @@ if (isset($_SESSION['customer_username'])) {
 <html lang="fr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <?php include("element/head.php") ?>
-  <title>Meal Pattes</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="body_accueil">
@@ -72,8 +65,11 @@ if (isset($_SESSION['customer_username'])) {
       <a href="menu.php"><button type="button">Découvrir le menu</button></a>
     </div>
 
-    <h1>Quelques uns de nos compagnons !</h1>
+    <!-- Menu -->
+    
+
     <!-- Affichage des animaux du plus récent au plus ancien : -->
+    <h1>Quelques uns de nos compagnons !</h1>
     <?php
 
 

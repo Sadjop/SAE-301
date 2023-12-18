@@ -193,6 +193,7 @@
 
 /* Page animaux */
 
+
 .h1_animaux {
   margin-left: 5vw;
 }
@@ -211,6 +212,60 @@
   padding: 10px;
   text-align: center;
 }
+
+/* Menu */
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  transition: all 1s;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.titre-menu {
+  display: flex;
+  font-size: 100px;
+}
+
+.titre-menu h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+  margin-left: 5vw;
+}
+
+.img-menu img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  transition: all 1s;
+  height: auto;
+  width: 50vw;
+}
+
+.liste-allergenes {
+  padding-right: 5%;
+  padding-left: -10%;
+}
+
+
+
+.liste-allergenes h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.liste-allergenes h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
 
 /* Footer  */
 

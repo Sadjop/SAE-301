@@ -25,11 +25,7 @@ $resultats->closeCursor();
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meal pattes</title>
-
-    <link rel="stylesheet" href="css/style.css">
+    <?php include("element/head.php") ?>
 </head>
 
 <body>
@@ -47,6 +43,7 @@ $resultats->closeCursor();
         <h1 class="h1_animaux">Nos petits compagnons !</h1>
 
         <!-- Affichage des animaux du plus récent au plus ancien : -->
+        <div class="animaux">
         <?php
 
         foreach ($tabpet as $pet) {
@@ -58,6 +55,7 @@ $resultats->closeCursor();
         }
 
         ?>
+        </div>
     </main>
 </body>
 

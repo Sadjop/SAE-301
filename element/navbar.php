@@ -39,7 +39,7 @@
                 </div>
             </a>
 
-            <a href="menu.html" class="nav-link">
+            <a href="menu.php" class="nav-link">
                 <div class="nav-bloc n-4">
                     <div class="nav-image-container">
                         <img src="img/sidebar/menu.png" alt="">
@@ -57,11 +57,11 @@
                 </div>
             </a>
 
-            <a href="don.html" class="nav-link">
+            <a href="dons.php" class="nav-link">
                 <div class="nav-bloc n-6">
                     <div class="nav-image-container">
                         <img src="img/sidebar/don.png" alt="">
-                        <div class="image-title">Don</div>
+                        <div class="image-title">Dons</div>
                     </div>
                 </div>
             </a>
