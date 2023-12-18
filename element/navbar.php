@@ -76,7 +76,7 @@
                 </div>
             </a>
 
-            <a href="connexion.html" class="nav-link">
+            <a href="login.php" class="nav-link">
                 <div class="nav-bloc n-7">
                     <div class="nav-image-container">
                         <img src="img/sidebar/connexion.png" alt="">
