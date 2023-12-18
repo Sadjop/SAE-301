@@ -66,7 +66,7 @@
                 </div>
             </a>
 
-            <a href="login.php" class="nav-link">
+            <a href="logs/login.php" class="nav-link">
                 <div class="nav-bloc n-7">
                     <div class="nav-image-container">
                         <img src="img/sidebar/connexion.png" alt="">
@@ -74,6 +74,33 @@
                     </div>
                 </div>
             </a>
+            <?php
+            if (isset($_SESSION['customer_username'])) {
+
+                $isAdmin = ($customer_username === 'cacaboudin');
+
+                echo '<a href="logs/logout.php" class="nav-link">
+                        <div class="nav-bloc n-7">
+                         <div class="nav-image-container">
+                           <img src="img/sidebar/logout.png" alt="">
+                         <div class="image-title">Déconnexion</div>
+                         </div>
+                        </div>
+                        </a>';
+
+                        if ($isAdmin) {
+                            echo '<a href="admin.php" class="nav-link">
+                            <div class="nav-bloc n-7">
+                             <div class="nav-image-container">
+                               <img src="img/sidebar/admin.png" alt="">
+                             <div class="image-title">Admin</div>
+                             </div>
+                            </div>
+                            </a>';
+                        }
+            }
+
+            ?>
 
         </div>
     </nav>

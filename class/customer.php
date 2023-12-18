@@ -14,7 +14,7 @@ class customer
         $this->customer_lastname = $customer_lastname;
         $this->customer_firstname = $customer_firstname;
         $this->customer_username = $customer_username;
-        // Tu devrais hasher le mot de passe ici avant de le stocker dans l'objet ou la base de données
+        // Hashage du mot de passe avant d ele stocker dans la bdd
         $this->customer_password = password_hash($customer_password, PASSWORD_DEFAULT);
     }
 
@@ -34,52 +34,13 @@ class customer
         return $this->id_customer;
     }
 
-    // Getter pour récupérer le nom de l'utilisateur
-    public function getNom()
-    {
-        return $this->customer_lastname;
-    }
-
-    // Getter pour récupérer le prénom de l'utilisateur
-    public function getPrenom()
-    {
-        return $this->customer_firstname;
-    }
-
-    // Getter pour récupérer le nom d'utilisateur de l'utilisateur
-    public function getUsername()
-    {
-        return $this->customer_username;
-    }
-
-    // Getter pour récupérer le mot de passe de l'utilisateur
-    public function getPassword()
-    {
-        return $this->customer_password;
-    }
-
-    // Setter pour modifier le nom de l'utilisateur
-    public function setNom($customer_lastname)
-    {
-        $this->customer_lastname = $customer_lastname;
-    }
-
-    // Setter pour modifier le prénom de l'utilisateur
-    public function setPrenom($customer_firstname)
-    {
-        $this->customer_firstname = $customer_firstname;
-    }
-
-    // Setter pour modifier le nom d'utilisateur de l'utilisateur
-    public function setUsername($customer_username)
-    {
-        $this->customer_username = $customer_username;
-    }
-
-    // Setter pour modifier le mot de passe de l'utilisateur
-    public function setPassword($customer_password)
-    {
-        // Tu devrais hasher le mot de passe ici avant de le stocker dans l'objet ou la base de données
-        $this->customer_password = password_hash($customer_password, PASSWORD_DEFAULT);
+    // Méthode pour vérifier si l'username existe déjà dans la base de données
+    public static function checkUsernameExists($pdo, $username) {
+        $query = 'SELECT COUNT(*) FROM customer WHERE customer_username = :username';
+        $stmt = $pdo->prepare($query);
+        $stmt->bindParam(':username', $username);
+        $stmt->execute();
+        $count = $stmt->fetchColumn();
+        return ($count > 0);
     }
 }

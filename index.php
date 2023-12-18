@@ -19,6 +19,15 @@ if ($resultats && $resultats->rowCount() > 0) {
   $tabpet = $resultats->fetchAll(PDO::FETCH_ASSOC);
 }
 $resultats->closeCursor();
+
+session_start(); // Démarre la session
+
+// Vérifie si l'utilisateur est connecté
+if (isset($_SESSION['customer_username'])) {
+  $customer_username = $_SESSION['customer_username'];
+  echo "Utilisateur connecté : " . $customer_username;
+}
+
 ?>
 
 <!DOCTYPE html>

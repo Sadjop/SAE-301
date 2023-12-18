@@ -1,5 +1,5 @@
 <?php
-include('config/config.php');
+include('../config/config.php');
 
 session_start();
 
@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         echo 'Connexion réussie. Redirection...';
 
         // Rediriger vers la page d'accueil ou une autre page sécurisée
-        header('Location: index.php');
+        header('Location: ../index.php');
         exit;
     } else {
         // Afficher un message d'erreur si les informations de connexion sont incorrectes
@@ -59,9 +59,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">Se connecter</button>
     </form>
 
-    <form method="GET" action="create.php">
+    <a href="create.php">
         <button type="submit">Créer un compte</button>
-    </form>
+    </a> 
+    <br>
+    <a href="../index.php">
+        <button type="button">Retour à la page d'accueil</button>
+    </a>
 </body>
 
 </html>
