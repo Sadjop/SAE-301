@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 18 déc. 2023 à 11:33
+-- Généré le : lun. 18 déc. 2023 à 22:03
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -50,8 +50,18 @@ CREATE TABLE `customer` (
   `id_customer` int(11) NOT NULL,
   `customer_lastname` varchar(255) DEFAULT NULL,
   `customer_firstname` varchar(255) DEFAULT NULL,
-  `created_since` date DEFAULT NULL
+  `customer_username` varchar(50) NOT NULL,
+  `customer_password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `customer`
+--
+
+INSERT INTO `customer` (`id_customer`, `customer_lastname`, `customer_firstname`, `customer_username`, `customer_password`) VALUES
+(41, 'azaz', 'azazazz', 'arthur', '$2y$10$s6WmHeouPZdrDuEqdFn7Q.EyH69GqjW43.UjgK2T34cxhxBuwWL3e'),
+(42, 'admin', 'admin', 'cacaboudin', '$2y$10$oqSO1J57/C0mATMhNJEjIe470XPJKCyqgHFu6qugmge55srT1yL.K'),
+(44, 'Maison', 'Arthur', 'armaison', '$2y$10$uqHKwrncyji26sz4zOTtUedr.WBoU2M0QP/D/hZxZG5hDgSarLgju');
 
 -- --------------------------------------------------------
 
@@ -267,7 +277,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT pour la table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id_customer` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_customer` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT pour la table `groups`
