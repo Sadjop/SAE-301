@@ -27,8 +27,11 @@ $resultats->closeCursor();
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <?php include("element/head.php") ?>
   <title>Meal Pattes</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -40,8 +43,9 @@ $resultats->closeCursor();
 
   <!-- Intro Heading -->
   <main class="main-content">
-
-    <img src="img/accueil/accueil.png" alt="">
+    <div class="images-chats">
+      <img src="img/accueil/accueil.png" alt="">
+    </div>
     <div class="repas">
       <div class="repas-content">
         <img src="img/accueil/repas.png" alt="">
@@ -53,6 +57,10 @@ $resultats->closeCursor();
         </p>
 
       </div>
+    </div>
+    <div class="menu-accueil">
+      <img src="img/accueil/mockup_menu_accueil.png" alt="" height="500vh">
+      <a href="menu.php"><button type="button">Découvrir le menu</button></a>
     </div>
 
     <h1>Quelques uns de nos compagnons !</h1>
