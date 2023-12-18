@@ -1,0 +1,159 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    transition: all 1s;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.titre-menu {
+    display: flex;
+    padding-left: 10%;
+    font-size: 100px;
+}
+
+
+.img-menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+    transition: all 1s;
+}
+
+.liste-allergenes {
+    padding-right: 5%;
+    padding-left: -10%;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+
+.footer {
+    background-image: url(img/bg-footer.png);
+    height: 75vh;
+    object-fit: cover;
+    background-position: center;
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    bottom: 0;
+}
+
+.liste-footer {
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-weight: 400;
+    margin-top: 25vh;
+
+}
+
+.liste-footer ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 23%;
+    padding-left: 6%;
+}
+
+.liste-footer li {
+    display: flex;
+    padding: 10%;
+    justify-content: space-around;
+}
+
+.reseaux {
+    display: flex;
+    justify-content: center;
+}
+
+.reseaux a {
+    display: flex;
+    padding: 2%;
+}
+
+
+
+
+/* tablet*/
+@media screen and (max-width: 1024px) {
+    * {
+        flex-direction: column;
+        font-size: 12px;
+        height: fit-content;
+        transition: all 1s;
+    }
+
+    .liste-allergenes h2 {
+        font-size: 36px;
+    }
+
+    .titre-menu h1{
+        font-size: 76px;
+    }
+
+    .img-menu img {
+        height: 300px;
+        object-position: center;
+    }
+
+
+}
+
+/* telephone*/
+@media screen and (max-width: 600px) {
+    * {
+        flex-direction: column;
+        font-size: 7px;
+        height: fit-content;
+        transition: all 1s;
+    }
+
+    .liste-allergenes h2 {
+        font-size: 26px;
+    }
+
+    .titre-menu h1{
+        font-size: 49px;
+    }
+
+    .img-menu img {
+        height: 150px;
+        object-position: center;
+    }
+
+}
