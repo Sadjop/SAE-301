@@ -1,0 +1,99 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    transition: all 1s;
+    justify-content: center;
+  }
+
+.tarif-titre{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+
+  }
+  
+  .prix-ticket,.date{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+.tarif-container {
+    display: flex;
+    padding-left: 5%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.tarif {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid black; 
+    padding-bottom: 10px; 
+}
+
+.date{
+    padding-left: 2%;
+}
+
+.prix-ticket{
+    padding-left: 70%;
+}
+
+input{
+    margin-left: 2%;
+    border: none; 
+    border-radius: 50px; 
+    cursor: pointer;
+}
+span{
+    margin-left: 2%;
+}
+
+.zone-payement{
+    display: flex;
+    flex-direction: column;
+    padding-left: 70%;
+    padding-top: 5%;
+    width: 15%;
+    
+}
+.Price {
+    text-align: center;
+    margin-top: 10%;
+    padding-bottom: 5%;
+    margin-bottom: 2%;
+    font-size: 24px;
+    border-bottom: 2px solid black; 
+}
+
+.horizontal-bar{
+    margin-bottom: 15px;
+}
+
+.bouton-payer{
+    width: fit-content;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin-bottom: 5%;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 25px;
+    background-color: #DD7A52;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  
+.bouton-payer:hover {
+    transform: scale(1.1);
+    background-color: #543A8E;
+    opacity: 0.8;
+  }
+
+ 
