@@ -37,7 +37,7 @@
 .pet_card h2 {
   margin-top: 0;
 }
-/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
 .pet_card img {
   width: 100%;
   height: auto;
@@ -315,7 +315,7 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  font-size: 16px;
+  /* font-size: 16px; */
   color: white;
 }
 
@@ -585,9 +585,43 @@
   .pet_card {
     width: calc(100% - 20px);
   }
-
-  .animal_wrapper {
-    width: 90vw;
+  .animal_container {
+    background-size: 70%;
   }
+  
+  .animal_wrapper {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .animal_wrapper img {
+    width: 110%;
+  }
+  
+  .animal_wrapper .animal_name{
+    margin-top: 20px;
+    font-weight: 400;
+  }
+  
 
+  .animaux h2 {
+    margin-top: 5px;
+    font-size: 17px;
+  }
+  
+  .animaux .pet_card{
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .animaux img {
+    width: 85%;
+  }
+  
+  .animaux button {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  
 }
