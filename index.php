@@ -66,12 +66,13 @@ if (isset($_SESSION['customer_username'])) {
     </div>
 
     <!-- Menu -->
-    
+
 
     <!-- Affichage des animaux du plus récent au plus ancien : -->
     <div class="accueil-animaux" >
       <h1>Quelques uns de nos compagnons !</h1>
       <?php
+
 
       $randomPets = array_rand($tabpet, 4);
       foreach ($randomPets as $index) {
