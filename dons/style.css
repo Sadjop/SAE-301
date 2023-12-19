@@ -18,12 +18,12 @@ img {
     margin-top: 20px;
 }
 
-h1{
+h1 {
     font-family: 'Roboto', sans-serif;
-display: flex;
-padding-left: 10%;
-font-size: 72px;
-font-weight: 400;
+    display: flex;
+    padding-left: 10%;
+    font-size: 72px;
+    font-weight: 400;
 }
 
 h2 {
@@ -43,7 +43,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
     max-width: 800px;
-    font-weight: 100; 
+    font-weight: 100;
 }
 
 button {
@@ -62,8 +62,8 @@ button {
 
 button:hover {
     transform: scale(1.1);
-    background-color: #543A8E; 
-    opacity: 0.8; 
+    background-color: #543A8E;
+    opacity: 0.8;
 }
 
 
@@ -75,56 +75,53 @@ button:hover {
         height: fit-content;
         transition: all 1s;
     }
- 
- 
+
+
     h2 {
         font-size: 36px;
     }
- 
- 
-     h1{
+
+
+    h1 {
         font-size: 76px;
     }
- 
- 
-     img {
+
+
+    img {
         height: 300px;
         object-position: center;
     }
- 
- 
- 
- 
- }
- 
- 
- /* telephone*/
- @media screen and (max-width: 600px) {
+
+
+
+
+}
+
+
+/* telephone*/
+@media screen and (max-width: 600px) {
     * {
         flex-direction: column;
         font-size: 7px;
         height: fit-content;
         transition: all 1s;
     }
- 
- 
+
+
     * h2 {
         font-size: 26px;
     }
- 
- 
-     h1{
+
+
+    h1 {
         font-size: 49px;
     }
- 
- 
+
+
     img {
         height: 150px;
         object-position: center;
     }
- 
- 
- }
- 
- 
 
+
+}

@@ -191,6 +191,76 @@
   opacity: 1;
 }
 
+/* dons */
+
+.main-don {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.img-don {
+  max-width: 50%;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.title-don {
+    font-family: 'Roboto', sans-serif;
+  display: flex;
+  padding-left: 10%;
+  font-size: 72px;
+  font-weight: 400;
+}
+
+.h2-don {
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.h3-don {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.p-don {
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 800px;
+  font-weight: 100;
+}
+
+.button-don{
+  font-family: 'Roboto', sans-serif;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background-color: #DD7A52;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.button-don:hover {
+  transform: scale(1.1);
+  background-color: #543A8E;
+  opacity: 0.8;
+}
+
 /* Page animaux */
 
 

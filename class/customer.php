@@ -1,11 +1,11 @@
 <?php
 class customer
 {
-    private $id_customer;
-    private $customer_lastname;
-    private $customer_firstname;
-    private $customer_username;
-    private $customer_password;
+    public $id_customer;
+    public $customer_lastname;
+    public $customer_firstname;
+    public $customer_username;
+    public $customer_password;
 
     // Constructeur pour initialiser les propriétés de l'utilisateur
     public function __construct($customer_lastname, $customer_firstname, $customer_username, $customer_password)
@@ -42,5 +42,26 @@ class customer
         $stmt->execute();
         $count = $stmt->fetchColumn();
         return ($count > 0);
+    }
+
+    public static function getNumberOfCustomers($pdo) {
+        $query = 'SELECT COUNT(*) FROM customer';
+        $stmt = $pdo->query($query);
+        $count = $stmt->fetchColumn();
+        return $count;
+    }
+
+    public static function getAllCustomers($pdo) {
+        $query = 'SELECT * FROM customer';
+        $stmt = $pdo->query($query);
+        return $stmt->fetchAll(PDO::FETCH_CLASS, 'customer');
+    }
+
+    
+    public function getCustomerUsername() {
+        return $this->customer_username;
+    }
+    public function getCustomerPassword() {
+        return $this->customer_password;
     }
 }
