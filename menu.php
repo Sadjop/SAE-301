@@ -1,3 +1,10 @@
+<?php
+if (isset($_SESSION['customer_username'])) {
+    $customer_username = $_SESSION['customer_username'];
+    echo "Utilisateur connecté : " . $customer_username;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
