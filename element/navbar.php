@@ -30,7 +30,7 @@
                 </div>
             </a>
 
-            <a href="billeterie.html" class="nav-link">
+            <a href="ticket.php" class="nav-link">
                 <div class="nav-bloc n-3">
                     <div class="nav-image-container">
                         <img src="img/sidebar/billeterie.webp" alt="">

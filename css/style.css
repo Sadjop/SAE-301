@@ -48,6 +48,24 @@
   margin-bottom: 0;
 }
 
+
+.accueil-animaux .pet_card{
+  border-radius: 50px;
+  background-color: #543A8E;
+  padding: 0 0.5vw;  
+}
+
+.accueil-animaux h2{
+  font-weight: 400;
+  color: white;
+}
+
+.accueil-animaux img {
+  width: 16vw;
+  border-radius: 50px;
+}
+
+
 .menu-accueil{
   display: flex;
   flex-direction: column;
@@ -342,7 +360,7 @@
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  font-size: 16px;
+  /* font-size: 16px; */
   color: white;
 }
 
@@ -372,21 +390,20 @@
   padding: 10px;
   text-align: center;
   color: white;
+  margin-left: 60px;
 }
+
 .animal_wrapper img {
   width: 25vw;
   border-radius: 50px;
 }
 
+
 .animal_wrapper .animal_name{
-  margin-top: 210px;
+  margin-top: 230px;
   font-weight: 400;
 }
 
-
-.animal_wrapper .animal_name .animal_bio{
-  color: white;
-}
 /* Menu */
 
 * {
@@ -439,6 +456,102 @@
   font-weight: 400;
   font-size: 16px;
 }
+
+/* Billeterie  */
+
+
+.tarif-titre{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 72px;
+
+}
+
+.prix-ticket,.date{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.tarif-container {
+  display: flex;
+  padding-left: 5%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.tarif {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid black; 
+  padding-bottom: 10px; 
+}
+
+.date{
+  padding-left: 2%;
+}
+
+.prix-ticket{
+  padding-left: 70%;
+}
+
+.input-ticket{
+  margin-left: 2%;
+  border: none; 
+  border-radius: 50px; 
+  cursor: pointer;
+}
+span{
+  margin-left: 2%;
+}
+
+.zone-payement{
+  display: flex;
+  flex-direction: column;
+  padding-left: 70%;
+  padding-top: 5%;
+  width: 15%;
+  
+}
+.Price {
+  text-align: center;
+  margin-top: 10%;
+  padding-bottom: 5%;
+  margin-bottom: 2%;
+  font-size: 24px;
+  border-bottom: 2px solid black; 
+}
+
+.horizontal-bar{
+  margin-bottom: 15px;
+}
+
+.bouton-payer{
+  width: fit-content;
+  margin: auto;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  margin-bottom: 5%;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 25px;
+  background-color: #DD7A52;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+
+.bouton-payer:hover {
+  transform: scale(1.1);
+  background-color: #543A8E;
+  opacity: 0.8;
+}
+
+
 
 /* Admin  */
 .titre-dashboard h1{
@@ -613,9 +726,43 @@
   .pet_card {
     width: calc(100% - 20px);
   }
-
-  .animal_wrapper {
-    width: 90vw;
+  .animal_container {
+    background-size: 70%;
   }
+  
+  .animal_wrapper {
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .animal_wrapper img {
+    width: 110%;
+  }
+  
+  .animal_wrapper .animal_name{
+    margin-top: 20px;
+    font-weight: 400;
+  }
+  
 
+  .animaux h2 {
+    margin-top: 5px;
+    font-size: 17px;
+  }
+  
+  .animaux .pet_card{
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .animaux img {
+    width: 85%;
+  }
+  
+  .animaux button {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  
 }

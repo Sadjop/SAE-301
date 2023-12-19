@@ -69,8 +69,9 @@ if (isset($_SESSION['customer_username'])) {
 
 
     <!-- Affichage des animaux du plus récent au plus ancien : -->
-    <h1>Quelques uns de nos compagnons !</h1>
-    <?php
+    <div class="accueil-animaux" >
+      <h1>Quelques uns de nos compagnons !</h1>
+      <?php
 
 
     $randomPets = array_rand($tabpet, 4);
