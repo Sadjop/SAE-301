@@ -50,13 +50,16 @@ $resultats->closeCursor();
             echo '<div class="pet_card">';
             echo '<h2>' . $pet['pet_name'] . '</h2>';
             echo '<a href="animal.php?id=' . $pet['id_pet'] . '"><img src="' . $pet['path'] . '" alt="photo de ' . $pet['pet_name'] . '"></a>';
-            echo '<a href="animal.php?id=' . $pet['id_pet'] . '">En savoir plus</a>';
+            echo '<a href="animal.php?id=' . $pet['id_pet'] . '"><button>En savoir plus</button></a>';
             echo '</div>';
         }
 
         ?>
         </div>
     </main>
+
+    <?php include("element/footer.php") ?>
+
 </body>
 
 </html>

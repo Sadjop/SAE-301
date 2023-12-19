@@ -268,12 +268,57 @@
   margin-left: 5vw;
 }
 
+.animaux{
+  margin-left: 20px;
+}
+
+.animaux .pet_card{
+  border-radius: 50px;
+  background-color: #543A8E;
+  padding: 0 0.5vw;  
+}
+
+.animaux h2{
+  font-weight: 400;
+  color: white;
+}
+
+.animaux img {
+  width: 16vw;
+  border-radius: 50px;
+}
+
+.animaux button {
+  background-color: #543A8E;
+  color: black;
+  padding: 15px 20px;
+  margin-left: 4px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+}
+
+
+.animaux button:hover {
+  transform: scale(1.1);
+  background-color: #DD7A52;
+  opacity: 0.8;
+}
+
+
 /* Page Animal individuel*/
 
 .animal_container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-image: url("../img/accueil/formes.png");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position-x: right;
 }
 
 .animal_wrapper {
@@ -281,8 +326,22 @@
   margin: 10px;
   padding: 10px;
   text-align: center;
+  color: white;
+}
+.animal_wrapper img {
+  width: 25vw;
+  border-radius: 50px;
 }
 
+.animal_wrapper .animal_name{
+  margin-top: 210px;
+  font-weight: 400;
+}
+
+
+.animal_wrapper .animal_name .animal_bio{
+  color: white;
+}
 /* Menu */
 
 * {

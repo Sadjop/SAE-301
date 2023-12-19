@@ -81,13 +81,16 @@ $cat = $tabpet['nom_cat'];
                     <?php echo $nom ?>
                 </h1>
                 <section>
-                    <p>
+                    <p class="animal_bio">
                         <?php echo $bio ?>
                     </p>
                 </section>
             </div>
         </div>
     </main>
+
+    <?php include("element/footer.php") ?>
+
 </body>
 
 </html>
