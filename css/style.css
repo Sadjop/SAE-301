@@ -111,6 +111,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
   font-weight: 400;
+  color: black;
  }
 
  .Q1{
@@ -131,14 +132,21 @@
 
  .divQ1{
   display: flex;
+  color: black;
  }
 
  .divQ2{
   display: flex;
+  color: black;
  }
 
  .divQ3{
   display: flex;
+  color: black;
+ }
+
+ .Q1 h1{
+  color: black;
  }
 
 /* SideBar */
