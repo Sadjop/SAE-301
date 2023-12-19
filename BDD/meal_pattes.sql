@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : lun. 18 déc. 2023 à 22:03
+-- Généré le : mar. 19 déc. 2023 à 09:47
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -161,41 +161,41 @@ CREATE TABLE `picture` (
 --
 
 INSERT INTO `picture` (`id_pic`, `path`, `id_pet`) VALUES
-(3, 'img/chats/akai_chat/img_akai.jpg', 2),
-(4, 'img/chats/nala_chat/img_nala.jpg', 3),
-(5, 'img/chats/punchy_chat/img_punchy.jpg', 4),
-(6, 'img/chats/romeo_chat/img_romeo.jpg', 5),
-(7, 'img/chats/saphir_chat/img_saphir.jpg', 6),
-(8, 'img/chats/saturnin_chat/img_saturnin.jpg', 7),
-(9, 'img/chats/themis_chat/img_themis.jpg', 8),
-(10, 'img/chats/yermolay_chat/img_yermolay.jpg', 9),
-(11, 'img/chiens/milo_chien/img_milo.jpg', 19),
-(12, 'img/chiens/angie_chien/img_angie.jpg', 10),
-(13, 'img/chiens/black_chien/img_black.jpg', 11),
-(14, 'img/chiens/cortes_chien/img_cortes.jpg', 12),
-(15, 'img/chiens/eclair_chien/img_eclair.jpg', 13),
-(16, 'img/chiens/fender_chien/img_fender.jpg', 14),
-(17, 'img/chiens/ibiza_chien/img_ibiza.jpg', 15),
-(18, 'img/chiens/jordan_chien/img_jordan.jpg', 16),
-(19, 'img/chiens/juju_chien/img_juju.jpg', 17),
-(20, 'img/chiens/kogi_chien/img_kogi.jpg', 18),
-(21, 'img/chiens/moka_chien/img_moka.jpg', 20),
-(22, 'img/chiens/pepita_chien/img_pepita.jpg', 21),
-(23, 'img/chiens/pouik_chien/img_pouik.jpg', 22),
-(24, 'img/chiens/rally_chien/img_rally.jpg', 23),
-(25, 'img/chiens/romance_chien/img_romance.jpg', 25),
-(26, 'img/chiens/ramses_chien/img_ramses.jpg', 24),
-(27, 'img/chiens/rony_chien/img_rony.jpg', 26),
-(28, 'img/chiens/selfy_chien/img_selfy.jpg', 27),
-(29, 'img/chiens/sharf_chien/img_sharf.jpg', 29),
-(30, 'img/chiens/sherkan_chien/img_sherkan.jpg', 28),
-(31, 'img/chiens/tag_chien/img_tag.jpg', 30),
-(32, 'img/chiens/twister_chien/img_twister.jpg', 31),
-(33, 'img/chiens/tyser_chien/img_tyser.jpg', 32),
-(34, 'img/chiens/ulk_chien/img_ulk.jpg', 33),
-(35, 'img/chiens/ulysse_chien/img_ulysse.jpg', 34),
-(36, 'img/chiens/uzi_chien/img_uzi.jpg', 35),
-(37, 'img/chiens/volt_chien/img_volt.jpg', 36);
+(3, 'img/chats/akai_chat/img_akai.webp', 2),
+(4, 'img/chats/nala_chat/img_nala.webp', 3),
+(5, 'img/chats/punchy_chat/img_punchy.webp', 4),
+(6, 'img/chats/romeo_chat/img_romeo.webp', 5),
+(7, 'img/chats/saphir_chat/img_saphir.webp', 6),
+(8, 'img/chats/saturnin_chat/img_saturnin.webp', 7),
+(9, 'img/chats/themis_chat/img_themis.webp', 8),
+(10, 'img/chats/yermolay_chat/img_yermolay.webp', 9),
+(11, 'img/chiens/milo_chien/img_milo.webp', 19),
+(12, 'img/chiens/angie_chien/img_angie.webp', 10),
+(13, 'img/chiens/black_chien/img_black.webp', 11),
+(14, 'img/chiens/cortes_chien/img_cortes.webp', 12),
+(15, 'img/chiens/eclair_chien/img_eclair.webp', 13),
+(16, 'img/chiens/fender_chien/img_fender.webp', 14),
+(17, 'img/chiens/ibiza_chien/img_ibiza.webp', 15),
+(18, 'img/chiens/jordan_chien/img_jordan.webp', 16),
+(19, 'img/chiens/juju_chien/img_juju.webp', 17),
+(20, 'img/chiens/kogi_chien/img_kogi.webp', 18),
+(21, 'img/chiens/moka_chien/img_moka.webp', 20),
+(22, 'img/chiens/pepita_chien/img_pepita.webp', 21),
+(23, 'img/chiens/pouik_chien/img_pouik.webp', 22),
+(24, 'img/chiens/rally_chien/img_rally.webp', 23),
+(25, 'img/chiens/romance_chien/img_romance.webp', 25),
+(26, 'img/chiens/ramses_chien/img_ramses.webp', 24),
+(27, 'img/chiens/rony_chien/img_rony.webp', 26),
+(28, 'img/chiens/selfy_chien/img_selfy.webp', 27),
+(29, 'img/chiens/sharf_chien/img_sharf.webp', 29),
+(30, 'img/chiens/sherkan_chien/img_sherkan.webp', 28),
+(31, 'img/chiens/tag_chien/img_tag.webp', 30),
+(32, 'img/chiens/twister_chien/img_twister.webp', 31),
+(33, 'img/chiens/tyser_chien/img_tyser.webp', 32),
+(34, 'img/chiens/ulk_chien/img_ulk.webp', 33),
+(35, 'img/chiens/ulysse_chien/img_ulysse.webp', 34),
+(36, 'img/chiens/uzi_chien/img_uzi.webp', 35),
+(37, 'img/chiens/volt_chien/img_volt.webp', 36);
 
 -- --------------------------------------------------------
 

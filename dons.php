@@ -13,7 +13,7 @@
             Faire un don
         </h1>
         <main class="main-don">
-            <img src="img/dons/chiendon.jpg" alt="" class="img-don">
+            <img src="img/dons/chiendon.webp" alt="" class="img-don">
             <h2 class="h2-don">
                 Soutenez Nos Amis à Quatre Pattes : Faites un Don à la SPA
             </h2>
