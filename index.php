@@ -66,7 +66,7 @@ if (isset($_SESSION['customer_username'])) {
     </div>
 
     <!-- Menu -->
-    
+
 
     <!-- Affichage des animaux du plus récent au plus ancien : -->
     <h1>Quelques uns de nos compagnons !</h1>
@@ -82,6 +82,46 @@ if (isset($_SESSION['customer_username'])) {
       echo '</div>';
     }
     ?>
+    <div class="FAQ">
+      <h1>Questions et réponses</h1><br><br>
+      <br><br><br><br><br><br>
+      <div class="divQ1">
+        <div class="Q1">
+          <h2>Puis-je ramener mon animal de compagnie à l’événement ?</h2>
+          <p>Malheureusement, non car nous voulons éviter tout conflit entre les animaux sauf pour les chiens d’assistance qui sont bien sûr autorisés !</p>
+        </div>
+
+        <div class="vide">
+        </div>
+
+      </div>
+      <br><br><br><br><br><br><br><br><br>
+
+      <div class="divQ2">
+        <div class="vide">
+        </div>
+
+        <div class="Q2">
+          <h2>Je suis une personne à mobilité réduite, pourrais-je accéder à la salle ?</h2>
+          <p>Oui, l’accès à la salle permet à tout public de participer à l’événement !</p>
+        </div>
+
+
+      </div>
+      <br><br><br><br><br><br><br><br><br>
+
+      <div class="divQ3">
+        <div class="Q3">
+          <h2>J’ai un régime spécial, est ce que le menu est adapté ?</h2>
+          <p>La liste des allergènes est présente sur la page menu, mais vous pouvez effectuer une requête spéciale via la page contact.</p>
+        </div>
+
+        <div class="vide">
+        </div>
+
+      </div>
+      <br><br><br><br><br><br><br><br><br>
+    </div>
   </main>
   <?php include("element/footer.php") ?>
 

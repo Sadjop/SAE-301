@@ -77,6 +77,51 @@
   opacity: 0.8;
 }
 
+.FAQ{
+ background-image: url(../img/accueil/formes.png );
+ background-repeat: no-repeat;
+ margin-top: 7vh;
+}
+
+.FAQ h1{
+  font-family: 'Roboto', sans-serif;
+  font-size: 50px;
+  font-weight: 400;
+ }
+
+ .FAQ h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+ }
+
+ .Q1{
+  flex: 1 1;
+ }
+
+ .Q2{
+  flex: 1 1;
+ }
+
+ .Q3{
+  flex: 1 1;
+ }
+
+ .vide{
+  flex: 1 1;
+ }
+
+ .divQ1{
+  display: flex;
+ }
+
+ .divQ2{
+  display: flex;
+ }
+
+ .divQ3{
+  display: flex;
+ }
 
 /* SideBar */
 
