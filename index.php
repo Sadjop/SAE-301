@@ -69,19 +69,20 @@ if (isset($_SESSION['customer_username'])) {
     
 
     <!-- Affichage des animaux du plus récent au plus ancien : -->
-    <h1>Quelques uns de nos compagnons !</h1>
-    <?php
+    <div class="accueil-animaux" >
+      <h1>Quelques uns de nos compagnons !</h1>
+      <?php
 
-
-    $randomPets = array_rand($tabpet, 4);
-    foreach ($randomPets as $index) {
-      $pet = $tabpet[$index];
-      echo '<div class="pet_card">';
-      echo '<h2>' . $pet['pet_name'] . '</h2>';
-      echo '<a href="animal.php?id=' . $pet['id_pet'] . '"><img src="' . $pet['path'] . '"></a>';
-      echo '</div>';
-    }
-    ?>
+      $randomPets = array_rand($tabpet, 4);
+      foreach ($randomPets as $index) {
+        $pet = $tabpet[$index];
+        echo '<div class="pet_card">';
+        echo '<h2>' . $pet['pet_name'] . '</h2>';
+        echo '<a href="animal.php?id=' . $pet['id_pet'] . '"><img src="' . $pet['path'] . '"></a>';
+        echo '</div>';
+      }
+      ?>
+    </div>
   </main>
   <?php include("element/footer.php") ?>
 

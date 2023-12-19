@@ -37,7 +37,7 @@
 .pet_card h2 {
   margin-top: 0;
 }
-
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .pet_card img {
   width: 100%;
   height: auto;
@@ -47,6 +47,24 @@
 .pet_card p {
   margin-bottom: 0;
 }
+
+
+.accueil-animaux .pet_card{
+  border-radius: 50px;
+  background-color: #543A8E;
+  padding: 0 0.5vw;  
+}
+
+.accueil-animaux h2{
+  font-weight: 400;
+  color: white;
+}
+
+.accueil-animaux img {
+  width: 16vw;
+  border-radius: 50px;
+}
+
 
 .menu-accueil{
   display: flex;
@@ -327,21 +345,20 @@
   padding: 10px;
   text-align: center;
   color: white;
+  margin-left: 60px;
 }
+
 .animal_wrapper img {
   width: 25vw;
   border-radius: 50px;
 }
 
+
 .animal_wrapper .animal_name{
-  margin-top: 210px;
+  margin-top: 230px;
   font-weight: 400;
 }
 
-
-.animal_wrapper .animal_name .animal_bio{
-  color: white;
-}
 /* Menu */
 
 * {
