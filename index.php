@@ -46,11 +46,11 @@ if (isset($_SESSION['customer_username'])) {
   <!-- Intro Heading -->
   <main class="main-content">
     <div class="images-chats">
-      <img src="img/accueil/accueil.png" alt="">
+      <img src="img/accueil/accueil.webp" alt="">
     </div>
     <div class="repas">
       <div class="repas-content">
-        <img src="img/accueil/repas.png" alt="">
+        <img src="img/accueil/repas.webp" alt="">
       </div>
       <div>
         <h4>Bienvenue au Meal Pattes !</h4>
@@ -61,7 +61,7 @@ if (isset($_SESSION['customer_username'])) {
       </div>
     </div>
     <div class="menu-accueil">
-      <img src="img/accueil/mockup_menu_accueil.png" alt="" height="500vh">
+      <img src="img/accueil/mockup_menu_accueil.webp" alt="" height="500vh">
       <a href="menu.php"><button type="button">Découvrir le menu</button></a>
     </div>
 

@@ -11,9 +11,9 @@
                 </ul>
             </div>
             <div class="reseaux">
-                <a href="http://"><img src="img/footer/facebook.png" alt=""></a>
-                <a href="http://"><img src="img/footer/instagram.png" alt=""></a>
-                <a href="http://"><img src="img/footer/telephone.png" alt=""></a>
+                <a href="http://"><img src="img/footer/facebook.webp" alt=""></a>
+                <a href="http://"><img src="img/footer/instagram.webp" alt=""></a>
+                <a href="http://"><img src="img/footer/telephone.webp" alt=""></a>
             </div>
         </div>
     </footer>

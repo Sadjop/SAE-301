@@ -1,0 +1,142 @@
+
+*{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-image:url("../img/fond-contact.png");
+    background-size: 100%;
+}
+
+
+/* Barre contact */
+
+h1 {
+    margin-left: 20%;
+    font-size: 100px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.headerContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin: 5% 20%;
+    background-color: #f2f2f2;
+    border-radius: 50px;
+}
+
+.headerContact img {
+    max-width: 100px;
+    margin-right: 2%;
+    border-radius: 50px;
+
+}
+
+
+/* Carte */
+
+#map {
+    max-width: 600px;
+    margin: 0 25%;
+    border-radius: 50px;
+    padding: 100px;
+    border: 4px solid #f2f2f2;
+}
+
+/* Formulaire */
+
+form {
+    max-width: 600px;
+    margin: 30px auto;
+    margin-top: 5%;
+    margin: 5% 30% 0 30%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    background-color: #f9f9f9;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #DD7A52;
+    color: black;
+    padding: 15px 20px;
+    margin-left: 4px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #543A8E;
+    opacity: 0.8;
+}
+
+
+
+/* telephone*/
+@media screen and (max-width: 600px) {
+    * {
+        flex-direction: column;
+        font-size: 7px;
+        height: fit-content;
+        transition: all 1s;
+    }
+
+    h1{
+        font-size: 65px;
+    } 
+
+    #map {
+        margin: 0 20%;
+    }
+
+ }
+
+
+
+ /* tablet*/
+@media screen and (max-width: 1024px) {
+    * {
+        flex-direction: column;
+        font-size: 12px;
+        height: fit-content;
+        transition: all 1s;
+    }
+ 
+    h1{
+        font-size: 65px;
+    } 
+ }
+ 
+ 

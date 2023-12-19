@@ -13,7 +13,7 @@
         </div>
         <div class="menu">
             <div class="img-menu">
-                <img src="img/menu/mockup_menu.png" alt="">
+                <img src="img/menu/mockup_menu.webp" alt="">
             </div>
 
             <div class="liste-allergenes">

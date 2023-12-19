@@ -7,7 +7,7 @@
         <div class="wrapper_nav">
             <a href="index.php" class="nav_link">
                 <div class="logo">
-                    <img src="img/sidebar/logo.png" alt="">
+                    <img src="img/sidebar/logo.webp" alt="">
                 </div>
 
             </a>
@@ -15,7 +15,7 @@
             <a href="index.php" class="nav-link">
                 <div class="nav-bloc n-1">
                     <div class="nav-image-container">
-                        <img src="img/sidebar/pictoaccueil.png" alt="">
+                        <img src="img/sidebar/pictoaccueil.webp" alt="">
                         <div class="image-title">Accueil</div>
                     </div>
                 </div>
@@ -24,7 +24,7 @@
             <a href="contact.html" class="nav-link">
                 <div class="nav-bloc n-2">
                     <div class="nav-image-container">
-                        <img src="img/sidebar/contact.png" alt="">
+                        <img src="img/sidebar/contact.webp" alt="">
                         <div class="image-title">Contact</div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
             <a href="billeterie.html" class="nav-link">
                 <div class="nav-bloc n-3">
                     <div class="nav-image-container">
-                        <img src="img/sidebar/billeterie.png" alt="">
+                        <img src="img/sidebar/billeterie.webp" alt="">
                         <div class="image-title">Billetterie</div>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
             <a href="menu.php" class="nav-link">
                 <div class="nav-bloc n-4">
                     <div class="nav-image-container">
-                        <img src="img/sidebar/menu.png" alt="">
+                        <img src="img/sidebar/menu.webp" alt="">
                         <div class="image-title">Menu</div>
                     </div>
                 </div>
@@ -51,7 +51,7 @@
             <a href="animaux.php" class="nav-link">
                 <div class="nav-bloc n-5">
                     <div class="nav-image-container">
-                        <img src="img/sidebar/animaux.png" alt="">
+                        <img src="img/sidebar/animaux.webp" alt="">
                         <div class="image-title">Animaux</div>
                     </div>
                 </div>
@@ -60,7 +60,7 @@
             <a href="dons.php" class="nav-link">
                 <div class="nav-bloc n-6">
                     <div class="nav-image-container">
-                        <img src="img/sidebar/don.png" alt="">
+                        <img src="img/sidebar/don.webp" alt="">
                         <div class="image-title">Dons</div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@
             <a href="logs/login.php" class="nav-link">
                 <div class="nav-bloc n-7">
                     <div class="nav-image-container">
-                        <img src="img/sidebar/connexion.png" alt="">
+                        <img src="img/sidebar/connexion.webp" alt="">
                         <div class="image-title">Connexion</div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@
                 echo '<a href="logs/logout.php" class="nav-link">
                         <div class="nav-bloc n-7">
                         <div class="nav-image-container">
-                        <img src="img/sidebar/logout.png" alt="">
+                        <img src="img/sidebar/logout.webp" alt="">
                         <div class="image-title">Déconnexion</div>
                         </div>
                         </div>
@@ -92,7 +92,7 @@
                     echo '<a href="admin.php" class="nav-link">
                             <div class="nav-bloc n-7">
                             <div class="nav-image-container">
-                            <img src="img/sidebar/admin.png" alt="">
+                            <img src="img/sidebar/admin.webp" alt="">
                             <div class="image-title">Admin</div>
                             </div>
                             </div>
