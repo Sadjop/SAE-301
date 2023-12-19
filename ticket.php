@@ -1,14 +1,11 @@
 <?php
-include('SessionManager.php');
-SessionManager::startSession();
+include("config/config.php");
+session_start();
 
-if (SessionManager::isSessionActive()) {
-    $userId = SessionManager::getSessionInfo('user_id');
-    echo "Utilisateur connecté avec l'ID : $userId";
-} else {
-    header('Location: login.php');
-    exit();
-}
+if (isset($_SESSION['customer_username'])) {
+    $customer_username = $_SESSION['customer_username'];
+    echo "Utilisateur connecté : " . $customer_username;
+  }
 
 ?>
 
@@ -53,7 +50,9 @@ if (SessionManager::isSessionActive()) {
         <div class="zone-payement">
             <div class="Price">Total <span id="total">0.00</span>€</div>
             <div class="horizontal-bar"></div>
-            <a href="<?php echo isset($_SESSION['customer_username']) ? '' : 'login.php'; ?>" class="bouton-payer">Payer</a>
+            <a href="<?php echo isset($_SESSION['customer_username']) ?
+             '' : 
+             'logs/login.php'; ?>" class="bouton-payer">Payer</a>
         </div>
     </main>
 </body>
