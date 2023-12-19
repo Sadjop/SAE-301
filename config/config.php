@@ -1,7 +1,7 @@
 <?php
 $host = "localhost"; // Le modifier une fois que le site sera en ligne
 $username = "root"; // Le modifier une fois que le site sera en ligne
-$password = "root"; // Le modifier une fois que le site sera en ligne
+$password = ""; // Le modifier une fois que le site sera en ligne
 $dbname = "meal_pattes";
 $port = 3306; // Le modifier une fois que le site sera en ligne
 

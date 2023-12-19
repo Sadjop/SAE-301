@@ -19,6 +19,20 @@ if ($resultats && $resultats->rowCount() > 0) {
 }
 $resultats->closeCursor();
 
+
+$requeteTicket = 'SELECT * 
+FROM ticket 
+INNER JOIN customer
+ON ticket.id_customer = customer.id_customer
+ORDER BY ticket.id_ticket DESC';
+
+$resultatsTicket = $bdd->query($requeteTicket);
+
+if ($resultatsTicket && $resultatsTicket->rowCount() > 0) {
+    $tabTicket = $resultatsTicket->fetchAll(PDO::FETCH_ASSOC);
+}
+$resultatsTicket->closeCursor();
+
 // Récupère le nombre de customers depuis la base de données
 $numCustomers = customer::getNumberOfCustomers($pdo);
 ?>
@@ -33,17 +47,25 @@ $numCustomers = customer::getNumberOfCustomers($pdo);
 <body>
     <main class="main-content">
         <div class="titre-dashboard">
-        <h1>Admin Dashboard</h1>
+            <h1>Admin Dashboard</h1>
         </div>
         <div class="liste-customers">
-        <p>Nombre de customers : <?php echo $numCustomers; ?><br><br></p>
-        <p>Liste Customers: <br><br>
-            <?php
-            // $customers = customer::getAllCustomers($pdo);
-            foreach ($tabcustomer as $customer) {
-                echo $customer['customer_lastname'] . ' ' . $customer['customer_firstname'] . ' ' . $customer['customer_username'] . '<a href="customer.php"<button class="button">      Modifier</button></a><br> ';
-            }
-            ?></p>
+            <p>Nombre de customers : <?php echo $numCustomers; ?><br><br></p>
+            <p>Liste Customers: <br><br>
+                <?php
+                // $customers = customer::getAllCustomers($pdo);
+                foreach ($tabcustomer as $customer) {
+                    echo $customer['customer_lastname'] . ' ' . $customer['customer_firstname'] . ' ' . $customer['customer_username'] . '<a href="customer.php"<button class="button">      Modifier</button></a><br> ';
+                }
+                ?></p>
+
+            <p>Liste Tickets: <br><br>
+                <?php
+                foreach ($tabTicket as $ticket) {
+                    echo $ticket['customer_lastname'] . ' ' . $ticket['customer_firstname'] . ' ' . $ticket['customer_username'] . '<a href="customer.php"<button class="button">      Modifier</button></a><br> ';
+                }
+                ?></p>
+
         </div>
     </main>
 </body>
