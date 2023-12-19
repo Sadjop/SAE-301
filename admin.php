@@ -20,7 +20,7 @@ if ($resultats && $resultats->rowCount() > 0) {
 $resultats->closeCursor();
 
 // Récupère le nombre de customers depuis la base de données
-// $numCustomers = customer::getNumberOfCustomers($pdo);
+$numCustomers = customer::getNumberOfCustomers($pdo);
 ?>
 
 <!DOCTYPE html>
@@ -32,16 +32,19 @@ $resultats->closeCursor();
 
 <body>
     <main class="main-content">
+        <div class="titre-dashboard">
         <h1>Admin Dashboard</h1>
-        <p>Nombre de customers : <?php echo $numCustomers; ?></p>
+        </div>
+        <div class="liste-customers">
+        <p>Nombre de customers : <?php echo $numCustomers; ?><br><br></p>
         <p>Liste Customers: <br><br>
             <?php
             // $customers = customer::getAllCustomers($pdo);
             foreach ($tabcustomer as $customer) {
-                echo $customer['customer_lastname'] . ' ' . $customer['customer_firstname'] . ' ' . $customer['customer_username'] . '<a href="customer.php"<button class="button">Modifier</button></a><br> ';
+                echo $customer['customer_lastname'] . ' ' . $customer['customer_firstname'] . ' ' . $customer['customer_username'] . '<a href="customer.php"<button class="button">      Modifier</button></a><br> ';
             }
             ?></p>
-        <!-- Ajoutez d'autres informations ou fonctionnalités pour l'admin selon vos besoins -->
+        </div>
     </main>
 </body>
 
