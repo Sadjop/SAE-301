@@ -34,6 +34,10 @@
   text-align: center;
 }
 
+.pet_card:hover {
+  transform: scale(1.1);
+}
+
 .pet_card h2 {
   margin-top: 0;
 }
@@ -335,6 +339,10 @@
   margin-left: 20px;
 }
 
+.animaux .pet_card:hover {
+  transform: scale(1.1);
+}
+
 .animaux .pet_card{
   border-radius: 50px;
   background-color: #543A8E;
@@ -396,6 +404,10 @@
 .animal_wrapper img {
   width: 25vw;
   border-radius: 50px;
+}
+
+.animal_wrapper img:hover {
+  transform: scale(1.1);
 }
 
 
