@@ -100,6 +100,7 @@ if (isset($_SESSION['customer_username'])) {
       <div class="divQ2">
         <div class="vide">
         </div>
+        
 
         <div class="Q2">
           <h2>Je suis une personne à mobilité réduite, pourrais-je accéder à la salle ?</h2>
