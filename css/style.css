@@ -1,7 +1,8 @@
 /* fil d'arianne */
 .fil_arianne {
   font-size: 14px;
-  margin-left: 3vw;
+  margin-left: 4vw;
+  margin-top: 2vw;
 }
 
 .fil_arianne a {
@@ -63,6 +64,7 @@
   font-weight: 400;
   color: white;
 }
+
 
 .accueil-animaux img {
   width: 16vw;
@@ -291,9 +293,9 @@
 .title-don {
     font-family: 'Roboto', sans-serif;
   display: flex;
-  padding-left: 10%;
   font-size: 72px;
   font-weight: 400;
+  margin-left: 5vw;
 }
 
 .h2-don {
@@ -340,6 +342,8 @@
 
 
 .h1_animaux {
+  font-size: 75px;
+  font-weight: 400;
   margin-left: 5vw;
 }
 
@@ -484,6 +488,7 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 72px;
+  margin-left: 5vw;
 
 }
 
@@ -692,6 +697,19 @@ span{
   .animal_wrapper {
     width: 80vw;
   }
+  .accueil-animaux .pet_card{
+    width: 50vw;
+  }
+
+  .h1_animaux{
+    font-size: 45px;
+    margin-left: 7vw;
+  }
+
+  .main-content{
+    margin-left: 7vw;
+    margin-right: 2vw;
+  }
 }
 
 
@@ -785,4 +803,38 @@ span{
     padding: 5px 10px;
   }
   
+  .body_accueil{
+  margin-left: 2vw;
+}
+
+.body_accueil h2{
+  font-size: 17px;
+}
+
+.body_accueil h1{
+  font-size: 28px;
+}
+
+.pet-card{
+  width: 30vw;
+}
+
+.accueil-animaux .pet_card{
+  width: 30vw;
+}
+
+.titre-menu{
+  margin-left: 2vw;
+}
+
+.h1_animaux{
+  font-size: 28px;
+  margin-left: 7vw;
+}
+
+.main-content{
+  margin-left: 7vw;
+  margin-right: 2vw;
+}
+
 }

@@ -70,7 +70,7 @@ if (isset($_SESSION['customer_username'])) {
 
     <!-- Affichage des animaux du plus récent au plus ancien : -->
     <div class="accueil-animaux" >
-      <h1>Quelques uns de nos compagnons !</h1>
+      <h3>Quelques uns de nos compagnons !</h3>
       <?php
 
 
