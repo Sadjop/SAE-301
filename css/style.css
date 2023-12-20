@@ -837,4 +837,24 @@ span{
   margin-right: 2vw;
 }
 
+.title-don{
+  font-size: 55px;
+  margin-left: 5vw;
+}
+
+.h2-don{
+  font-size: 30px;
+  margin-left: 5vw;
+}
+
+.h3-don{
+  font-size: 25px;
+  margin-left: 5vw;
+}
+
+.p-don{
+  font-size: 12px;
+  margin-left: 5vw;
+}
+
 }
