@@ -25,9 +25,11 @@ session_start(); // Démarre la session
 // Vérifie si l'utilisateur est connecté
 if (isset($_SESSION['customer_username'])) {
   $customer_username = $_SESSION['customer_username'];
-  echo "Utilisateur connecté : " . $customer_username;
+  $id_customer = $_SESSION['id_customer'];
+  echo '<div id="welcome-message">Bonjour ' . $customer_username . '</div>';
+} else {
+  echo "Utilisateur non connecté";
 }
-
 ?>
 
 <!DOCTYPE html>

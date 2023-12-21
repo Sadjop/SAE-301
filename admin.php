@@ -2,10 +2,10 @@
 include('config/config.php');
 include('class/customer.php');
 
+session_start();
+
 $bdd = new PDO('mysql:host=' . $host . ';port=' . $port . ';dbname=' . $dbname, $username, $password);
 
-// Requête pour sélectionner tous les animaux et leurs photos associées, 
-//triés par ID d'animaux de la plus récente à la plus ancienne
 $requete = 'SELECT *
 FROM customer
 ORDER BY customer.id_customer DESC';
@@ -35,6 +35,9 @@ $resultatsTicket->closeCursor();
 
 // Récupère le nombre de customers depuis la base de données
 $numCustomers = customer::getNumberOfCustomers($pdo);
+
+$totalTickets = count($tabTicket);
+$totalSomme = $totalTickets * 14.99;
 ?>
 
 <!DOCTYPE html>
@@ -45,29 +48,45 @@ $numCustomers = customer::getNumberOfCustomers($pdo);
 </head>
 
 <body>
+    <?php include 'element/navbar.php'; ?>
     <main class="main-content">
         <div class="titre-dashboard">
             <h1>Admin Dashboard</h1>
         </div>
         <div class="liste-customers">
-            <p>Nombre de customers : <?php echo $numCustomers; ?><br><br></p>
+            <p>Nombre de customers : <?php echo $numCustomers ?><br><br></p>
             <p>Liste Customers: <br><br>
                 <?php
-                // $customers = customer::getAllCustomers($pdo);
                 foreach ($tabcustomer as $customer) {
-                    echo $customer['customer_lastname'] . ' ' . $customer['customer_firstname'] . ' ' . $customer['customer_username'] . '<a href="customer.php"<button class="button">      Modifier</button></a><br> ';
+                    echo $customer['customer_firstname'] . ' ' . $customer['customer_lastname'] . ' Nom d\'utilisateur :' . $customer['customer_username'] . '<a href="customer.php"<button class="button">      Modifier</button></a><br> ';
                 }
-                ?></p>
+                ?><br></p>
 
+
+            <p>Nombre de tickets vendus: <?php echo $totalTickets ?> <br><br> </p>
             <p>Liste Tickets: <br><br>
                 <?php
                 foreach ($tabTicket as $ticket) {
-                    echo $ticket['customer_lastname'] . ' ' . $ticket['customer_firstname'] . ' ' . $ticket['customer_username'] . '<a href="customer.php"<button class="button">      Modifier</button></a><br> ';
+                    echo $ticket['customer_firstname'] . ' ' . $ticket['customer_lastname'] . ' ' . $ticket['ticket_valid'] . '<br>';
                 }
-                ?></p>
+                ?><br></p>
+            <strong>Somme totale récoltée <?php echo $totalSomme ?> €</strong>
 
         </div>
+
+        <div id="progressbar-container">
+            <div id="progressbar"></div>
+            <div id="progress-text"></div>
+        </div>
+
+
+        <script>
+            var totalSomme = <?php echo json_encode($totalSomme); ?>;
+        </script>
+        <script src="script/script.js"></script>
     </main>
+
+
 </body>
 
 </html>

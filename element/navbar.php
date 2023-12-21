@@ -21,7 +21,7 @@
                 </div>
             </a>
 
-            <a href="contact.html" class="nav-link">
+            <a href="contact.php" class="nav-link">
                 <div class="nav-bloc n-2">
                     <div class="nav-image-container">
                         <img src="img/sidebar/contact.webp" alt="">
@@ -66,18 +66,22 @@
                 </div>
             </a>
 
-            <a href="logs/login.php" class="nav-link">
-                <div class="nav-bloc n-7">
-                    <div class="nav-image-container">
-                        <img src="img/sidebar/connexion.webp" alt="">
-                        <div class="image-title">Connexion</div>
-                    </div>
-                </div>
-            </a>
+            <?php
+            if (!isset($_SESSION['customer_username'])) {
+                echo '<a href="logs/login.php" class="nav-link">
+                        <div class="nav-bloc n-7">
+                            <div class="nav-image-container">
+                                <img src="img/sidebar/connexion.webp" alt="">
+                                <div class="image-title">Connexion</div>
+                            </div>
+                        </div>
+                    </a>';
+            }
+            ?>
             <?php
             if (isset($_SESSION['customer_username'])) {
 
-                $isAdmin = ($customer_username === 'cacaboudin');
+                $isAdmin = ($_SESSION['is_admin'] == 1);
 
                 echo '<a href="logs/logout.php" class="nav-link">
                         <div class="nav-bloc n-7">
