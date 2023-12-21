@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 21 déc. 2023 à 09:02
+-- Généré le : jeu. 21 déc. 2023 à 15:40
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -60,8 +60,8 @@ CREATE TABLE `customer` (
 --
 
 INSERT INTO `customer` (`id_customer`, `customer_lastname`, `customer_firstname`, `customer_username`, `customer_password`, `is_admin`) VALUES
-(46, 'MAISON', 'Arthur', 'arthas', '$2y$10$Cj02a.LwNgWPu766ucbWoeNpU9gCpmmEtdKHg0pRsEzjOMvxLfp4q', 0),
-(48, 'Marijnissen', 'Nathan', 'Naave', '$2y$10$pX65qNiV1z9Ek./NhvLsU.zl5PxQc6YFZ6.bv3FukirwAbKNHKf6u', 1);
+(48, 'Marijnissen', 'Nathan', 'Prout', '$2y$10$pX65qNiV1z9Ek./NhvLsU.zl5PxQc6YFZ6.bv3FukirwAbKNHKf6u', 1),
+(51, 'MAISON', 'Arthur', 'Arth\'as', '$2y$10$nq9GKitl3JNl8irP9ALQdO8PQaoO2mknveHr2Ea.qL5RVYqz8kmLa', 0);
 
 -- --------------------------------------------------------
 
@@ -249,7 +249,18 @@ INSERT INTO `ticket` (`id_ticket`, `ticket_valid`, `ticket_name`, `id_customer`,
 (176, '2023-12-16', 'Marijnissen', 48, NULL),
 (177, '2023-12-16', 'Marijnissen', 48, NULL),
 (178, '2023-12-16', 'Marijnissen', 48, NULL),
-(179, '2023-12-16', 'Marijnissen', 48, NULL);
+(179, '2023-12-16', 'Marijnissen', 48, NULL),
+(180, '2023-12-15', 'Marijnissen', 48, NULL),
+(181, '2023-12-15', 'Marijnissen', 48, NULL),
+(182, '2023-12-15', 'Marijnissen', 48, NULL),
+(183, '2023-12-15', 'Marijnissen', 48, NULL),
+(184, '2023-12-15', 'Marijnissen', 48, NULL),
+(185, '2023-12-15', 'Marijnissen', 48, NULL),
+(186, '2023-12-15', 'Marijnissen', 48, NULL),
+(187, '2023-12-15', 'Marijnissen', 48, NULL),
+(188, '2023-12-16', 'Marijnissen', 48, NULL),
+(189, '2023-12-16', 'Marijnissen', 48, NULL),
+(190, '2023-12-16', 'Marijnissen', 48, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -316,7 +327,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT pour la table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id_customer` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `id_customer` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=52;
 
 --
 -- AUTO_INCREMENT pour la table `groups`
@@ -340,7 +351,7 @@ ALTER TABLE `picture`
 -- AUTO_INCREMENT pour la table `ticket`
 --
 ALTER TABLE `ticket`
-  MODIFY `id_ticket` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=180;
+  MODIFY `id_ticket` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=191;
 
 --
 -- Contraintes pour les tables déchargées
