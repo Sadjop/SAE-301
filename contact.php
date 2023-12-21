@@ -80,17 +80,14 @@ if (isset($_SESSION['customer_username'])) {
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
             }).addTo(map);
 
-            return map; // Renvoyer la carte pour une utilisation ultérieure
+            return map;
         }
 
         function loadGPSData(map) {
-            // Exemple de coordonnées GPS
             var coordinates = [
-                { lat: 45.0451978, lng: 3.8811041 },  // Exemple de coordonnées à San Francisco, CA
-                // Ajoutez autant de coordonnées que nécessaire
+                { lat: 45.0451978, lng: 3.8811041 },
             ];
 
-            // Créez des marqueurs avec les coordonnées GPS
             var markers = L.layerGroup(coordinates.map(coord => {
                 var marker = L.marker([coord.lat, coord.lng]);
 
@@ -102,13 +99,8 @@ if (isset($_SESSION['customer_username'])) {
 
                 return marker;
             }));
-
-            // Ajoutez les marqueurs à la carte
             markers.addTo(map);
         }
-
-
-
         var map = initMap();
         loadGPSData(map);
 

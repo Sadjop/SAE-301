@@ -102,28 +102,21 @@ if (isset($_SESSION['customer_username'])) {
             </div>
         </form>
     </main>
+    <?php include("element/footer.php") ?>
 
     <script>
-        var ticketPrice = 14.99;  // Remplacez la valeur par le prix réel du ticket
+        var ticketPrice = 14.99;  
 
 function adjustTotal(index, change) {
     var quantityElement = document.getElementById('quantity' + index);
-    var hiddenQuantityElement = document.getElementById('hiddenQuantity' + index);
-
-    // Parse the current quantity as an integer
+    var hiddenQuantityElement = document.getElementById('hiddenQuantity' + index)
     var currentQuantity = parseInt(quantityElement.innerHTML);
-
-    // Update the current quantity with the change
     currentQuantity += change;
-
-    // Ensure the quantity is not negative
     currentQuantity = Math.max(0, currentQuantity);
 
-    // Update the quantity element and the hidden input value
     quantityElement.innerHTML = currentQuantity;
     hiddenQuantityElement.value = currentQuantity;
 
-    // Update the total hidden input value
     var totalQuantity = (
         parseInt(document.getElementById('quantity0').innerHTML) +
         parseInt(document.getElementById('quantity1').innerHTML) +
@@ -131,8 +124,6 @@ function adjustTotal(index, change) {
     );
 
     document.getElementById('hiddenTotalQuantity').value = totalQuantity;
-
-    // Calculate and update the total
     var total = (totalQuantity * ticketPrice).toFixed(2);
     document.getElementById('total').innerHTML = total;
 }
