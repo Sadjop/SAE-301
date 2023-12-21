@@ -1,11 +1,19 @@
 <?php
 include("config/config.php");
-
 $bdd = new PDO('mysql:host=' . $host . ';port=' . $port . ';dbname=' . $dbname, $username, $password);
+
+session_start();
+
+if (isset($_SESSION['customer_username'])) {
+    $customer_username = $_SESSION['customer_username'];
+    $id_customer = $_SESSION['id_customer'];
+    echo '<div id="welcome-message">Bonjour ' . $customer_username . '</div>';
+} else {
+    echo "Utilisateur non connecté";
+}
 
 $id = $_GET["id"];
 
-// Requête pour récupérer les informations de l'artiste et de ses albums
 $requete = 'SELECT *
 FROM pet
 INNER JOIN category 
@@ -14,16 +22,13 @@ INNER JOIN picture
 ON pet.id_pet = picture.id_pet
 WHERE pet.id_pet=' . $id . '';
 
-// Exécution de la requête et récupération des résultats sous forme d'un tableau associatif
+
 $resultats = $bdd->query($requete);
-// Vérification si des résultats ont été trouvés
 if ($resultats && $resultats->rowCount() > 0) {
-    // Si des résultats ont été trouvés, stockage des résultats dans un tableau associatif
-    $tabpet = $resultats->fetch(PDO::FETCH_ASSOC); // Use fetch instead of fetchAll
+    $tabpet = $resultats->fetch(PDO::FETCH_ASSOC);
 }
 $resultats->closeCursor();
 
-// Récupération des informations de l'artiste et de ses albums dans des variables
 $nom = $tabpet['pet_name'];
 $naissance = $tabpet['pet_date_of_birth'];
 $pet_sex = $tabpet['pet_sex'];
@@ -31,15 +36,6 @@ $essai = $tabpet['is_trial'];
 $adoption = $tabpet['is_adopted'];
 $bio = $tabpet['bio'];
 $cat = $tabpet['nom_cat'];
-
-$pet_sex == 0 ? "Mâle" : "Femelle";
-
-//Check si la condition est remplie :
-
-// echo $pet_sex == 0 ? "Mâle" : "Femelle";
-// echo $essai == 0 ? "Non" : "Oui";
-// echo $adoption == 0 ? "Non" : "Oui";
-
 
 ?>
 
@@ -67,7 +63,7 @@ $pet_sex == 0 ? "Mâle" : "Femelle";
         </div>
 
         <div class="animal_container">
-            
+
             <!-- Image -->
             <div class="animal_wrapper">
                 <section class="animal_image">
@@ -91,22 +87,22 @@ $pet_sex == 0 ? "Mâle" : "Femelle";
                 <br>
                 <section>
                     <p class="animal_sexe">
-                       Sexe: <?php echo $pet_sex == 0 ? "Mâle" : "Femelle"?>
+                        Sexe: <?php echo $pet_sex == 0 ? "Mâle" : "Femelle" ?>
                     </p>
                     <br>
                     <p class="animal_naissance">
-                       Date de naissance: <?php echo $naissance ?>
+                        Date de naissance: <?php echo $naissance ?>
                     </p>
                     <br>
                     <p class="animal_essai">
-                       Est à l'essai: <?php echo $essai == 0 ? "Non" : "Oui"; ?>
+                        Est à l'essai: <?php echo $essai == 0 ? "Non" : "Oui"; ?>
                     </p>
                     <p class="animal_adoption">
-                       Est adopté: <?php echo $adoption == 0 ? "Non" : "Oui"; ?>
+                        Est adopté: <?php echo $adoption == 0 ? "Non" : "Oui"; ?>
                     </p>
 
                 </section>
-                
+
 
 
             </div>
