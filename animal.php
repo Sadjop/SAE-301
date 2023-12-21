@@ -32,6 +32,7 @@ $adoption = $tabpet['is_adopted'];
 $bio = $tabpet['bio'];
 $cat = $tabpet['nom_cat'];
 
+$pet_sex == 0 ? "Mâle" : "Femelle";
 
 //Check si la condition est remplie :
 
@@ -80,11 +81,34 @@ $cat = $tabpet['nom_cat'];
                 <h1 class="animal_name">
                     <?php echo $nom ?>
                 </h1>
+                <?php echo $cat ?>
+                <br><br>
                 <section>
                     <p class="animal_bio">
                         <?php echo $bio ?>
                     </p>
                 </section>
+                <br>
+                <section>
+                    <p class="animal_sexe">
+                       Sexe: <?php echo $pet_sex == 0 ? "Mâle" : "Femelle"?>
+                    </p>
+                    <br>
+                    <p class="animal_naissance">
+                       Date de naissance: <?php echo $naissance ?>
+                    </p>
+                    <br>
+                    <p class="animal_essai">
+                       Est à l'essai: <?php echo $essai == 0 ? "Non" : "Oui"; ?>
+                    </p>
+                    <p class="animal_adoption">
+                       Est adopté: <?php echo $adoption == 0 ? "Non" : "Oui"; ?>
+                    </p>
+
+                </section>
+                
+
+
             </div>
         </div>
     </main>

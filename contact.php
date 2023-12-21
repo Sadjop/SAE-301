@@ -23,13 +23,14 @@
 </head>
 
 <body>
+    <?php include("element/navbar.php") ?>
     <main class="main-contact">
         <div class="img-background-contact">
         </div>
 
         <h1>Contact</h1>
         <div class="headerContact">
-            <img src="img/logo_spa.png" alt="data 1">
+            <img src="img/contact/logo_spa.png" alt="data 1">
 
             <p>La SPA de la Haute-Loire</br>
                 Tél : 04.71.02.65.50</br>
@@ -38,7 +39,7 @@
 
         <div id="map"></div>
 
-        <form action=".." method="post">
+        <form class="form-contact" action="contact.php" method="post">
             <label for="name">Nom :</label>
             <input type="text" id="name" name="name" required>
 

@@ -1,25 +1,17 @@
 
-*{
+.main-contact{
     font-family: "Roboto", sans-serif;
     font-weight: 100;
-
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-}
-
-main {
     background-image:url("../img/fond-contact.png");
     background-size: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 
 /* Barre contact */
 
-h1 {
+.main-contact h1 {
     margin-left: 20%;
     font-size: 100px;
     font-weight: 400;
@@ -47,7 +39,7 @@ h1 {
 
 /* Carte */
 
-#map {
+.main-contact #map {
     max-width: 600px;
     margin: 0 25%;
     border-radius: 50px;
@@ -57,7 +49,7 @@ h1 {
 
 /* Formulaire */
 
-form {
+.form-contact {
     max-width: 600px;
     margin: 30px auto;
     margin-top: 5%;
@@ -68,14 +60,14 @@ form {
     background-color: #f9f9f9;
 }
 
-form label {
+.form-contact label {
     display: block;
     margin: 10px 0 5px;
 }
 
-form input,
-form select,
-form textarea {
+.form-contact input,
+.form-contact select,
+.form-contact textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -84,7 +76,7 @@ form textarea {
     box-sizing: border-box;
 }
 
-form button {
+.form-contact button {
     background-color: #DD7A52;
     color: black;
     padding: 15px 20px;
@@ -96,7 +88,7 @@ form button {
 }
 
 
-button:hover {
+.main-contact button:hover {
     transform: scale(1.1);
     background-color: #543A8E;
     opacity: 0.8;
@@ -106,18 +98,18 @@ button:hover {
 
 /* telephone*/
 @media screen and (max-width: 600px) {
-    * {
+    .main-contact {
         flex-direction: column;
         font-size: 7px;
         height: fit-content;
         transition: all 1s;
     }
 
-    h1{
+    .main-contact h1{
         font-size: 65px;
     } 
 
-    #map {
+    .main-contact #map {
         margin: 0 20%;
     }
 
@@ -127,14 +119,14 @@ button:hover {
 
  /* tablet*/
 @media screen and (max-width: 1024px) {
-    * {
+    .main-contact {
         flex-direction: column;
         font-size: 12px;
         height: fit-content;
         transition: all 1s;
     }
  
-    h1{
+    .main-contact h1{
         font-size: 65px;
     } 
  }

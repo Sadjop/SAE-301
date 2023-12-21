@@ -1,14 +1,17 @@
-var ticketPrice = 14.99;
-var quantities = [0, 0, 0];
-var maxTickets = 10;
+console.log("totalSomme: " + totalSomme);
 
-function adjustTotal(index, change) {
-    quantities[index] += change;
-    quantities[index] = Math.max(0, quantities[index]); 
-    quantities[index] = Math.min(maxTickets, quantities[index]); // Limit the quantity to maxTickets
+document.addEventListener("DOMContentLoaded", function () {
+    updateProgressBar(totalSomme);
+});
 
-    document.getElementById('quantity' + index).innerHTML = quantities[index];
+function updateProgressBar(totalSomme) {
+    var progressbar = document.getElementById("progressbar");
+    var progresstext = document.getElementById("progress-text");
+    var progress = (totalSomme / 500) * 100; 
 
-    var total = (quantities.reduce((acc, quantity) => acc + quantity, 0) * ticketPrice).toFixed(2);
-    document.getElementById('total').innerHTML = total;
+    progressbar.style.width = progress.toFixed(2) + "%";
+    progresstext.innerHTML = progress.toFixed(2) + "%";
 }
+
+var percentage = (totalSomme / 500) * 100;
+console.log("Percentage: " + percentage.toFixed(2) + "%");

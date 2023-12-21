@@ -3,6 +3,8 @@ include('../config/config.php');
 
 session_start();
 
+$_SESSION['redirect_url'] = $_SERVER['REQUEST_URI'];
+
 // Vérifier si le formulaire de connexion a été soumis
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Récupérer les données du formulaire
@@ -16,12 +18,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt = $pdo->prepare('SELECT * FROM customer WHERE customer_username = :customer_username');
     $stmt->bindParam(':customer_username', $customer_username);
     $stmt->execute();
-    $user = $stmt->fetch();
+    $customer = $stmt->fetch();
 
     // Vérifier si l'utilisateur existe et si le mot de passe est correct
-    if ($user && password_verify($customer_password, $user['customer_password'])) {
-        // Démarrer une session et stocker le nom d'utilisateur
+    if ($customer && password_verify($customer_password, $customer['customer_password'])) {
+
+        $id_customer = $customer['id_customer'];
+        $is_admin = $customer['is_admin'];
+
+        // Démarrer une session et stocker le nom d'utilisateur, l'id et l'attribut 'is_admin'
         $_SESSION['customer_username'] = $customer_username;
+        $_SESSION['id_customer'] = $id_customer;
+        $_SESSION['is_admin'] = $is_admin;
 
         // Message de débogage
         echo 'Connexion réussie. Redirection...';
@@ -33,7 +41,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Afficher un message d'erreur si les informations de connexion sont incorrectes
         $error = 'Nom d\'utilisateur ou mot de passe incorrect.';
     }
+    
+
 }
+
+
 ?>
 <!DOCTYPE html>
 <html>

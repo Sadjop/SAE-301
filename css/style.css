@@ -53,14 +53,13 @@
   margin-bottom: 0;
 }
 
-
-.accueil-animaux .pet_card{
+.accueil-animaux .pet_card {
   border-radius: 50px;
-  background-color: #543A8E;
-  padding: 0 0.5vw;  
+  background-color: #543a8e;
+  padding: 0 0.5vw;
 }
 
-.accueil-animaux h2{
+.accueil-animaux h2 {
   font-weight: 400;
   color: white;
 }
@@ -71,8 +70,7 @@
   border-radius: 50px;
 }
 
-
-.menu-accueil{
+.menu-accueil {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,80 +78,79 @@
   margin-bottom: 10vh;
 }
 
-.menu-accueil button{
-  font-family: 'Roboto', sans-serif;
+.menu-accueil button {
+  font-family: "Roboto", sans-serif;
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 10px 20px;
   font-size: 18px;
   border: none;
   border-radius: 25px;
-  background-color: #DD7A52;
+  background-color: #dd7a52;
   color: #fff;
   cursor: pointer;
   transition: transform 0.3s, opacity 0.3s;
 }
 
-
 .menu-accueil button:hover {
   transform: scale(1.1);
-  background-color: #543A8E;
+  background-color: #543a8e;
   opacity: 0.8;
 }
 
-.FAQ{
- background-image: url(../img/accueil/formes.png );
- background-repeat: no-repeat;
- margin-top: 7vh;
+.FAQ {
+  background-image: url(../img/accueil/formes.png);
+  background-repeat: no-repeat;
+  margin-top: 7vh;
 }
 
-.FAQ h1{
-  font-family: 'Roboto', sans-serif;
+.FAQ h1 {
+  font-family: "Roboto", sans-serif;
   font-size: 50px;
   font-weight: 400;
- }
+}
 
- .FAQ h2{
-  font-family: 'Roboto', sans-serif;
+.FAQ h2 {
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 400;
   color: black;
- }
+}
 
- .Q1{
+.Q1 {
   flex: 1 1;
- }
+}
 
- .Q2{
+.Q2 {
   flex: 1 1;
- }
+}
 
- .Q3{
+.Q3 {
   flex: 1 1;
- }
+}
 
- .vide{
+.vide {
   flex: 1 1;
- }
+}
 
- .divQ1{
+.divQ1 {
   display: flex;
   color: black;
- }
+}
 
- .divQ2{
+.divQ2 {
   display: flex;
   color: black;
- }
+}
 
- .divQ3{
+.divQ3 {
   display: flex;
   color: black;
- }
+}
 
- .Q1 h1{
+.Q1 h1 {
   color: black;
- }
+}
 
 /* SideBar */
 
@@ -164,7 +161,6 @@
   left: 2vw;
   top: 0;
   z-index: 2;
-  
 }
 
 /*pour cacher la barre*/
@@ -226,9 +222,8 @@
   padding-left: 3vw;
 }
 
-.images-chats img{
+.images-chats img {
   width: 100%;
-  
 }
 
 .repas {
@@ -279,9 +274,8 @@
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
-
 
 .img-don {
   max-width: 50%;
@@ -291,7 +285,7 @@
 }
 
 .title-don {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   display: flex;
   font-size: 72px;
   font-weight: 400;
@@ -299,13 +293,13 @@
 }
 
 .h2-don {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 32px;
   font-weight: 400;
 }
 
 .h3-don {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 400;
   margin-top: 20px;
@@ -318,15 +312,15 @@
   font-weight: 100;
 }
 
-.button-don{
-  font-family: 'Roboto', sans-serif;
+.button-don {
+  font-family: "Roboto", sans-serif;
   margin-top: 5%;
   margin-bottom: 5%;
   padding: 10px 20px;
   font-size: 18px;
   border: none;
   border-radius: 25px;
-  background-color: #DD7A52;
+  background-color: #dd7a52;
   color: #fff;
   cursor: pointer;
   transition: transform 0.3s, opacity 0.3s;
@@ -334,12 +328,11 @@
 
 .button-don:hover {
   transform: scale(1.1);
-  background-color: #543A8E;
+  background-color: #543a8e;
   opacity: 0.8;
 }
 
 /* Page animaux */
-
 
 .h1_animaux {
   font-size: 75px;
@@ -347,7 +340,7 @@
   margin-left: 5vw;
 }
 
-.animaux{
+.animaux {
   margin-left: 20px;
 }
 
@@ -355,13 +348,13 @@
   transform: scale(1.1);
 }
 
-.animaux .pet_card{
+.animaux .pet_card {
   border-radius: 50px;
-  background-color: #543A8E;
-  padding: 0 0.5vw;  
+  background-color: #543a8e;
+  padding: 0 0.5vw;
 }
 
-.animaux h2{
+.animaux h2 {
   font-weight: 400;
   color: white;
 }
@@ -372,7 +365,7 @@
 }
 
 .animaux button {
-  background-color: #543A8E;
+  background-color: #543a8e;
   color: black;
   padding: 15px 20px;
   margin-left: 4px;
@@ -384,13 +377,11 @@
   color: white;
 }
 
-
 .animaux button:hover {
   transform: scale(1.1);
-  background-color: #DD7A52;
+  background-color: #dd7a52;
   opacity: 0.8;
 }
-
 
 /* Page Animal individuel*/
 
@@ -422,8 +413,7 @@
   transform: scale(1.1);
 }
 
-
-.animal_wrapper .animal_name{
+.animal_wrapper .animal_name {
   margin-top: 230px;
   font-weight: 400;
 }
@@ -431,7 +421,7 @@
 /* Menu */
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 100;
   transition: all 1s;
 }
@@ -447,7 +437,7 @@
 }
 
 .titre-menu h1 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 72px;
   margin-left: 5vw;
@@ -467,33 +457,30 @@
   padding-left: -10%;
 }
 
-
-
 .liste-allergenes h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 32px;
 }
 
 .liste-allergenes h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
 
 /* Billeterie  */
 
-
-.tarif-titre{
-  font-family: 'Roboto', sans-serif;
+.tarif-titre {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 72px;
   margin-left: 5vw;
-
 }
 
-.prix-ticket,.date{
-  font-family: 'Roboto', sans-serif;
+.prix-ticket,
+.date {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
 }
@@ -510,35 +497,34 @@
   display: flex;
   align-items: center;
   text-align: center;
-  border-bottom: 2px solid black; 
-  padding-bottom: 10px; 
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
 }
 
-.date{
+.date {
   padding-left: 2%;
 }
 
-.prix-ticket{
+.prix-ticket {
   padding-left: 70%;
 }
 
-.input-ticket{
+.input-ticket {
   margin-left: 2%;
-  border: none; 
-  border-radius: 50px; 
+  border: none;
+  border-radius: 50px;
   cursor: pointer;
 }
-span{
+span {
   margin-left: 2%;
 }
 
-.zone-payement{
+.zone-payement {
   display: flex;
   flex-direction: column;
   padding-left: 70%;
   padding-top: 5%;
   width: 15%;
-  
 }
 .Price {
   text-align: center;
@@ -546,53 +532,143 @@ span{
   padding-bottom: 5%;
   margin-bottom: 2%;
   font-size: 24px;
-  border-bottom: 2px solid black; 
+  border-bottom: 2px solid black;
 }
 
-.horizontal-bar{
+.horizontal-bar {
   margin-bottom: 15px;
 }
 
-.bouton-payer{
+.bouton-payer {
   width: fit-content;
   margin: auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
   margin-bottom: 5%;
   padding: 10px 20px;
   font-size: 18px;
   border: none;
   border-radius: 25px;
-  background-color: #DD7A52;
+  background-color: #dd7a52;
   color: #fff;
   cursor: pointer;
   transition: transform 0.3s, opacity 0.3s;
 }
 
-
 .bouton-payer:hover {
   transform: scale(1.1);
-  background-color: #543A8E;
+  background-color: #543a8e;
   opacity: 0.8;
 }
 
+/* Contact */
 
+.main-contact {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  background-image: url("../img/contact/fond-contact.png");
+  background-size: 100%;
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+}
+
+/* Barre contact */
+
+.main-contact h1 {
+  margin-left: 20%;
+  font-size: 100px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.headerContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 5% 20%;
+  background-color: #f2f2f2;
+  border-radius: 50px;
+}
+
+.headerContact img {
+  max-width: 100px;
+  margin-right: 2%;
+  border-radius: 50px;
+}
+
+/* Carte */
+
+.main-contact #map {
+  max-width: 600px;
+  margin: 0 25%;
+  border-radius: 50px;
+  padding: 100px;
+  border: 4px solid #f2f2f2;
+}
+
+/* Formulaire */
+
+.main-contact form {
+  max-width: 600px;
+  margin: 30px auto;
+  margin-top: 5%;
+  margin: 5% 30% 0 30%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  background-color: #f9f9f9;
+}
+
+.main-contact form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.main-contact form input,
+.main-contact form select,
+.main-contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.main-contact form button {
+  background-color: #dd7a52;
+  color: black;
+  padding: 15px 20px;
+  margin-left: 4px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.main-contact button:hover {
+  transform: scale(1.1);
+  background-color: #543a8e;
+  opacity: 0.8;
+}
 
 /* Admin  */
-.titre-dashboard h1{
-  font-family: 'Roboto', sans-serif;
+.titre-dashboard h1 {
+  font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 72px;
   margin-left: 5vw;
   margin-bottom: 5vh;
 }
 
-.liste-customers{
- display: flex;
- flex-direction: column;
- align-items: center;
+.liste-customers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 
 /* Footer  */
 
@@ -649,7 +725,9 @@ span{
   padding: 2%;
 }
 
+/* Media Querries  */
 
+/* Tablette */
 
 @media screen and (max-width: 1024px) {
   * {
@@ -682,12 +760,12 @@ span{
     height: 20vh;
   }
 
-  .menu-accueil img{
+  .menu-accueil img {
     height: 25vh;
   }
 
   .repas {
- font-size: 7px;
+    font-size: 7px;
   }
 
   .pet_card {
@@ -710,8 +788,20 @@ span{
     margin-left: 7vw;
     margin-right: 2vw;
   }
+
+  .main-contact {
+    flex-direction: column;
+    font-size: 12px;
+    height: fit-content;
+    transition: all 1s;
 }
 
+.main-contact h1{
+    font-size: 65px;
+}
+}
+
+/* Téléphone */
 
 @media screen and (max-width: 600px) {
   * {
@@ -746,10 +836,10 @@ span{
   }
 
   .repas {
- font-size: 7px;
+    font-size: 7px;
   }
 
-  .menu-accueil img{
+  .menu-accueil img {
     height: 20vh;
   }
 
@@ -767,37 +857,36 @@ span{
   .animal_container {
     background-size: 70%;
   }
-  
+
   .animal_wrapper {
     width: 30%;
     margin: 10px;
     padding: 10px;
   }
-  
+
   .animal_wrapper img {
     width: 110%;
   }
-  
-  .animal_wrapper .animal_name{
+
+  .animal_wrapper .animal_name {
     margin-top: 20px;
     font-weight: 400;
   }
-  
 
   .animaux h2 {
     margin-top: 5px;
     font-size: 17px;
   }
-  
-  .animaux .pet_card{
+
+  .animaux .pet_card {
     width: 30%;
     margin-bottom: 20px;
   }
-  
+
   .animaux img {
     width: 85%;
   }
-  
+
   .animaux button {
     font-size: 10px;
     padding: 5px 10px;
@@ -857,4 +946,62 @@ span{
   margin-left: 5vw;
 }
 
+}
+
+/* BARRE DE PROGRESSION  */
+
+#progressbar-container {
+  width: 300px;
+  height: 20px;
+  margin: 30px auto;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#progressbar {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, #543a8e, #c07ed4);
+  border-radius: 25px;
+  transition: width 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+#progress-text {
+  position: absolute;
+  color: #543a8e;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#progressbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('your-pattern.png') repeat; /* Remplacez 'your-pattern.png' par le chemin de votre motif */
+  opacity: 0.1; /* Ajustez l'opacité du motif */
+}
+
+
+
+/* MESSAGE DE BIENVENUE  */
+
+#welcome-message {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #dd7a52;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
 }
