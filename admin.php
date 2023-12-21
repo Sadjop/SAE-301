@@ -10,11 +10,8 @@ $requete = 'SELECT *
 FROM customer
 ORDER BY customer.id_customer DESC';
 
-// Exécution de la requête et récupération des résultats sous forme d'un tableau associatif
 $resultats = $bdd->query($requete);
-// Vérification si des résultats ont été trouvés
 if ($resultats && $resultats->rowCount() > 0) {
-    // Si des résultats ont été trouvés, stockage des résultats dans un tableau associatif
     $tabcustomer = $resultats->fetchAll(PDO::FETCH_ASSOC);
 }
 $resultats->closeCursor();

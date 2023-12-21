@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 19 déc. 2023 à 09:47
+-- Généré le : jeu. 21 déc. 2023 à 09:02
 -- Version du serveur : 10.4.28-MariaDB
 -- Version de PHP : 8.2.4
 
@@ -51,17 +51,17 @@ CREATE TABLE `customer` (
   `customer_lastname` varchar(255) DEFAULT NULL,
   `customer_firstname` varchar(255) DEFAULT NULL,
   `customer_username` varchar(50) NOT NULL,
-  `customer_password` varchar(255) NOT NULL
+  `customer_password` varchar(255) NOT NULL,
+  `is_admin` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Déchargement des données de la table `customer`
 --
 
-INSERT INTO `customer` (`id_customer`, `customer_lastname`, `customer_firstname`, `customer_username`, `customer_password`) VALUES
-(41, 'azaz', 'azazazz', 'arthur', '$2y$10$s6WmHeouPZdrDuEqdFn7Q.EyH69GqjW43.UjgK2T34cxhxBuwWL3e'),
-(42, 'admin', 'admin', 'cacaboudin', '$2y$10$oqSO1J57/C0mATMhNJEjIe470XPJKCyqgHFu6qugmge55srT1yL.K'),
-(44, 'Maison', 'Arthur', 'armaison', '$2y$10$uqHKwrncyji26sz4zOTtUedr.WBoU2M0QP/D/hZxZG5hDgSarLgju');
+INSERT INTO `customer` (`id_customer`, `customer_lastname`, `customer_firstname`, `customer_username`, `customer_password`, `is_admin`) VALUES
+(46, 'MAISON', 'Arthur', 'arthas', '$2y$10$Cj02a.LwNgWPu766ucbWoeNpU9gCpmmEtdKHg0pRsEzjOMvxLfp4q', 0),
+(48, 'Marijnissen', 'Nathan', 'Naave', '$2y$10$pX65qNiV1z9Ek./NhvLsU.zl5PxQc6YFZ6.bv3FukirwAbKNHKf6u', 1);
 
 -- --------------------------------------------------------
 
@@ -204,13 +204,52 @@ INSERT INTO `picture` (`id_pic`, `path`, `id_pet`) VALUES
 --
 
 CREATE TABLE `ticket` (
-  `id_ticket` int(11) NOT NULL,
-  `duration` date DEFAULT NULL,
-  `ticket_valid` int(11) DEFAULT NULL,
+  `id_ticket` bigint(11) NOT NULL,
+  `ticket_valid` date DEFAULT NULL,
   `ticket_name` varchar(255) DEFAULT NULL,
   `id_customer` int(11) DEFAULT NULL,
   `id_group` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Déchargement des données de la table `ticket`
+--
+
+INSERT INTO `ticket` (`id_ticket`, `ticket_valid`, `ticket_name`, `id_customer`, `id_group`) VALUES
+(146, '2023-12-15', 'Marijnissen', 48, NULL),
+(147, '2023-12-16', 'Marijnissen', 48, NULL),
+(148, '2023-12-16', 'Marijnissen', 48, NULL),
+(149, '2023-12-16', 'Marijnissen', 48, NULL),
+(150, '2023-12-16', 'Marijnissen', 48, NULL),
+(151, '2023-12-16', 'Marijnissen', 48, NULL),
+(152, '2023-12-16', 'Marijnissen', 48, NULL),
+(153, '2023-12-16', 'Marijnissen', 48, NULL),
+(154, '2023-12-16', 'Marijnissen', 48, NULL),
+(155, '2023-12-16', 'Marijnissen', 48, NULL),
+(156, '2023-12-16', 'Marijnissen', 48, NULL),
+(157, '2023-12-16', 'Marijnissen', 48, NULL),
+(158, '2023-12-16', 'Marijnissen', 48, NULL),
+(159, '2023-12-16', 'Marijnissen', 48, NULL),
+(160, '2023-12-16', 'Marijnissen', 48, NULL),
+(161, '2023-12-16', 'Marijnissen', 48, NULL),
+(162, '2023-12-16', 'Marijnissen', 48, NULL),
+(163, '2023-12-16', 'Marijnissen', 48, NULL),
+(164, '2023-12-16', 'Marijnissen', 48, NULL),
+(165, '2023-12-16', 'Marijnissen', 48, NULL),
+(166, '2023-12-16', 'Marijnissen', 48, NULL),
+(167, '2023-12-16', 'Marijnissen', 48, NULL),
+(168, '2023-12-16', 'Marijnissen', 48, NULL),
+(169, '2023-12-16', 'Marijnissen', 48, NULL),
+(170, '2023-12-16', 'Marijnissen', 48, NULL),
+(171, '2023-12-16', 'Marijnissen', 48, NULL),
+(172, '2023-12-16', 'Marijnissen', 48, NULL),
+(173, '2023-12-16', 'Marijnissen', 48, NULL),
+(174, '2023-12-16', 'Marijnissen', 48, NULL),
+(175, '2023-12-16', 'Marijnissen', 48, NULL),
+(176, '2023-12-16', 'Marijnissen', 48, NULL),
+(177, '2023-12-16', 'Marijnissen', 48, NULL),
+(178, '2023-12-16', 'Marijnissen', 48, NULL),
+(179, '2023-12-16', 'Marijnissen', 48, NULL);
 
 --
 -- Index pour les tables déchargées
@@ -277,7 +316,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT pour la table `customer`
 --
 ALTER TABLE `customer`
-  MODIFY `id_customer` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id_customer` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT pour la table `groups`
@@ -301,7 +340,7 @@ ALTER TABLE `picture`
 -- AUTO_INCREMENT pour la table `ticket`
 --
 ALTER TABLE `ticket`
-  MODIFY `id_ticket` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_ticket` bigint(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=180;
 
 --
 -- Contraintes pour les tables déchargées
