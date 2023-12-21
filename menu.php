@@ -46,9 +46,7 @@ if (isset($_SESSION['customer_username'])) {
             </div>
         </div>
     </main>
-
     <?php include("element/footer.php") ?>
-
 </body>
 
 </html>

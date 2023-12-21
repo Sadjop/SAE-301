@@ -55,7 +55,20 @@ $totalSomme = $totalTickets * 14.99;
             <p>Liste Customers: <br><br>
                 <?php
                 foreach ($tabcustomer as $customer) {
-                    echo $customer['customer_firstname'] . ' ' . $customer['customer_lastname'] . ' Nom d\'utilisateur :' . $customer['customer_username'] . '<a href="customer.php"<button class="button">      Modifier</button></a><br> ';
+                    echo $customer['customer_firstname'] . ' ' . $customer['customer_lastname'] . ' Nom d\'utilisateur :' . $customer['customer_username'] . '
+                    <button class="modifier-btn">Modifier</button>
+                    <form class="modifier-form" action="admin/update_customer.php" method="POST" style="display: none;">
+                        <input type="hidden" name="customer_id" value="' . $customer['id_customer'] . '">
+                        <input type="text" name="customer_firstname" value="' . $customer['customer_firstname'] . '">
+                        <input type="text" name="customer_lastname" value="' . $customer['customer_lastname'] . '">
+                        <input type="text" name="customer_username" value="' . $customer['customer_username'] . '">
+                        <button type="submit">Enregistrer</button>
+                    </form>
+
+                    <form action="admin/delete_customer.php" method="POST">
+                        <input type="hidden" name="customer_id" value="' . $customer['id_customer'] . '">
+                        <button type="submit">Supprimer</button>
+                    </form><br>';
                 }
                 ?><br></p>
 

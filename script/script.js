@@ -15,3 +15,14 @@ function updateProgressBar(totalSomme) {
 
 var percentage = (totalSomme / 1000) * 100;
 console.log("Percentage: " + percentage.toFixed(2) + "%");
+
+
+document.querySelector('.modifier-btn').addEventListener('click', function() {
+    
+    var modifierForm = document.querySelector('.modifier-form');
+    if (modifierForm.style.display === 'none') {
+        modifierForm.style.display = 'block';
+    } else {
+        modifierForm.style.display = 'none';
+    }
+});

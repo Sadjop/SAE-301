@@ -69,9 +69,9 @@ if (isset($_SESSION['customer_username'])) {
             </p>
             <button onclick="window.location.href='https://www.ledonenligne.fr/associations/spahauteloire'" class="button-don">Faire un Don</button>
 
-        </main>
-
-        <?php
+        </main>   
+    </main>    
+         <?php
         include 'element/footer.php';
         ?>
 
