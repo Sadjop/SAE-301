@@ -55,7 +55,7 @@ if (isset($_SESSION['customer_username'])) {
         <img src="img/accueil/repas.webp" alt="">
       </div>
       <div>
-        <h4>Bienvenue au Meal Pattes !</h4>
+        <h2>Bienvenue au Meal Pattes !</h2>
         <p>
           Ce site est dédié à l'événement caritatif organisé par la SPA Haute-Loire, qui se déroulera du 29 janvier 2024 au 30 janvier 2024 dans la salle Jeanne d'Arc au Puy-en-Velay. Découvrez notre restaurant éphémère avec sa carte alléchante. Cet événement a pour mission de récolter des fonds essentiels pour soutenir notre SPA et faciliter l'adoption des animaux qui méritent une seconde chance. En unissant les plaisirs d'une carte de qualité et la noble cause de venir en aide aux animaux sans foyer, nous créons une opportunité pour vous de contribuer à une cause qui nous tient à cœur.
         </p>

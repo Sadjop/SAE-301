@@ -74,7 +74,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   margin-bottom: 10vh;
 }
 
@@ -115,18 +114,28 @@
   font-size: 32px;
   font-weight: 400;
   color: black;
+  margin-bottom: 5%;
 }
 
 .Q1 {
   flex: 1 1;
+  padding: 10%;
+  background-color: rgba(255, 255, 255, 0.785);
+  border-radius: 20%;
 }
 
 .Q2 {
   flex: 1 1;
+  padding: 10%;
+  background-color: rgba(255, 255, 255, 0.785);
+  border-radius: 20%;
 }
 
 .Q3 {
   flex: 1 1;
+  padding: 10%;
+  background-color: rgba(255, 255, 255, 0.785);
+  border-radius: 20%;
 }
 
 .vide {
@@ -136,20 +145,33 @@
 .divQ1 {
   display: flex;
   color: black;
+  border-radius: 20%;
 }
 
 .divQ2 {
   display: flex;
   color: black;
+  border-radius: 20%;
+  
 }
 
 .divQ3 {
   display: flex;
   color: black;
+  border-radius: 20%;
 }
 
 .Q1 h1 {
   color: black;
+}
+
+.body_accueil p {
+  font-size: 15%;
+}
+.body_accueil h2{
+  font-size: 170%;
+  margin-bottom: 5%;
+  
 }
 
 /* SideBar */
