@@ -26,7 +26,7 @@ class customer
 
         // Récupérer l'id_client auto-incrémenté
         $this->id_customer = $pdo->lastInsertId();
-    }
+    }   
 
     // Getter pour récupérer l'id_client de l'utilisateur
     public function getIdClient()

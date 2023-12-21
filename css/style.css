@@ -947,3 +947,61 @@ span {
 }
 
 }
+
+/* BARRE DE PROGRESSION  */
+
+#progressbar-container {
+  width: 300px;
+  height: 20px;
+  margin: 30px auto;
+  background-color: #f2f2f2;
+  border-radius: 25px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#progressbar {
+  width: 0;
+  height: 100%;
+  background: linear-gradient(to right, #543a8e, #c07ed4);
+  border-radius: 25px;
+  transition: width 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+#progress-text {
+  position: absolute;
+  color: #543a8e;
+  font-size: 14px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#progressbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('your-pattern.png') repeat; /* Remplacez 'your-pattern.png' par le chemin de votre motif */
+  opacity: 0.1; /* Ajustez l'opacité du motif */
+}
+
+
+
+/* MESSAGE DE BIENVENUE  */
+
+#welcome-message {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #dd7a52;
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
